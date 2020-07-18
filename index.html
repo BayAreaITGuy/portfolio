@@ -5,6 +5,8 @@
             <link href="style.css" rel="stylesheet" type="text/css">
             </link>
         </meta>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		
     </head>
     <body>
         <nav class="nav" id="navbar">
@@ -27,25 +29,56 @@
             </ul>
         </nav>
         <section id="welcome-section">
-            <h1>
+            <h1 style="color:white;">
                 Nice to meet you! I'm Connor Readnour.
             </h1>
-            <p>
-               I'm a Front-End Web Developer &nbsp / &nbsp CAD & CAFM specialist &nbsp / &nbsp IWMS Administrator
+			<p style="color:white;">
+			I'm a
+			</p>
+            <p style="color:white;">
+               Jr. Front-End Web Developer &nbsp / &nbsp CAD & CAFM specialist &nbsp / &nbsp IWMS Administrator
             </p>
-			<p>
-                <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank">I am also certified in Responsive Web Design</a> 
-            </p>
-			<p>
-                <a href="https://imgur.com/0X4oNhk" target="_blank">Here's a link to my resume</a> 
-            </p>
+			<br>
+                <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" class="btn btn-primary" color="white">
+				{ I am also certified in Responsive Web Design } </a>
+				<!-- 
+				-------------------------------|
+				LINES 43 - 62 for resume modal
+				issues: 
+				looking a bit fuzzy at the moment
+				possibly add modals for each image
+				-------------------------------|
+				-->
+				
+				<br>
+				<!--
+                <a class="myButton btn btn-defualt" id="myBtn">{ Here's my resume }</button></a>
+				-->
+				<!-- Trigger/Open The Modal -->
+				<!--<button id="myBtn">Open Modal</button> -->
+
+				<!-- The Modal -->
+				<!--
+				<div id="myModal" class="modal">
+				
+				  <!-- Modal content -->
+				  <!--
+				  <div class="modal-content img-container" style="background-color:grey;">
+					<span class="close" >&times;</span>
+						<div style="height: 100%; width:100%; text-align:center;">
+							<img src="img/resume/resume.png" Width="100%" max-width="800px" alt="">
+					    </div>
+ 				  </div>
+				</div>
+				-->
+				
         </section>
         <section id="projects">
             <h2 class="projects-section-header">
                 Here is some of my responsive web design work with boostrap
             </h2>
             <div class="projects-grid">
-                <a class="project project-tile">
+                
 					<p class="project-title">
 						<span class="code">
 							<
@@ -56,9 +89,9 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/s2PweCH.png"> 
-                </a>
+              
 				
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -69,9 +102,9 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/Teq2lUU.png">
-                </a>
+               
 
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -82,9 +115,9 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/pXiDBlR.png">
-                </a>
+             
 				
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -95,7 +128,7 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/dnR3zQl.png">
-                </a>
+                
             </div>
 			
 			<h2 class="projects-section-header">
@@ -103,7 +136,7 @@
             </h2>
             <div class="projects-grid">
                 
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -114,9 +147,9 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/Sq3LYHH.png">
-                </a>
+                
 				
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -127,9 +160,9 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/FyAnfme.png">
-                </a>
+                
 				
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -140,9 +173,9 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/CvmK2G0.png"> 
-                </a>
+                
 				
-				<a class="project project-tile">
+				
 					<p class="project-title">
 						<span class="code">
 							<
@@ -153,13 +186,13 @@
 						</span>
 					</p>
                     <img alt="project" class="project-image" src="https://imgur.com/D8Efeuk.png">
-                </a>
+                
 				
             </div>
 			
         </section>
         <section class="contact-section" id="contact">
-            <div class="contact-section-header">
+            <div class="contact-section-header" style="color:white;">
                 <h2>
                     Let's work together!
                 </h2>
@@ -182,15 +215,37 @@
                 </a>
             </div>
         </section>
-        <footer>
+        <footer style="color:white;">
             <p>
-                © Created by
-                <a href="https://www.linkedin.com/in/connorreadnour/" target="_blank">
-                    Connor Readnour
-                    <i class="fab fa-free-code-camp">
-                    </i>
-                </a>
+                © Created by Connor Readnour 
             </p>
         </footer>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
     </body>
 </html>
