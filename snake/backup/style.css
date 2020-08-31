@@ -1,0 +1,28 @@
+* {
+	text-align: center;
+	margin: auto;
+}
+
+.grid {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	border-style: solid;
+	background-color: #eba834;
+}
+
+.grid div {
+	width: 40px;
+	height: 40px;
+}
+
+.snake {
+	background-color: green;
+	border-radius: 25%;
+}
+
+.apple {
+	 background-image: url('apple.png');
+	 background-size: cover;
+}
