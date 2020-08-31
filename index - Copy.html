@@ -35,17 +35,25 @@
             <p style="color:white; text-align:center;">
                 IWMS Administrator  &nbsp /  &nbsp  CAD &nbsp / &nbsp Front-End Web Development
             </p>
-			<br>
-                <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" class="btn btn-primary" color="white">
-				{ I am also certified in Responsive Web Design }
-				</a>
-
+			  <br>
+            <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" class="btn btn-primary" color="white">
+        		{ I am also certified in Responsive Web Design }
+        		</a>
 				<br>
+        <!-- Resume header-->
+        <h4 class="projects-section-header" style="color:white;">My Resume</h4>
+        <img id="myImg" src="img/resume.jpg" alt="Resume" style="width:100%;max-width:300px">
 
+        <!-- The Resume Modal -->
+        <div id="myModal" class="modal">
+          <span class="close" style="color:white;">&times;</span>
+            <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
 
         </section>
 		<!--Start of Boostrap work -->
-        <section id="projects" style="color:white;">
+        <section id="projects" style="background-color: color:white;">
             <h2 class="projects-section-header" style="color:white;">
                 Bootstrap Front-End framework examples
             </h2>
@@ -233,5 +241,28 @@
                 © Created by Connor Readnour
             </p>
         </footer>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    </script>
     </body>
 </html>
