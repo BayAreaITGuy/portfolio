@@ -229,13 +229,6 @@ img:hover {opacity: 0.9;}
   transition: 0.3s;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
 .zoom {
   padding: 10px;
   transition: transform .2s; /* Animation */
