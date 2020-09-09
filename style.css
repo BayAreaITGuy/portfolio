@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
     --main-white: #f0f0f0;
     --main-red: #c41532;
