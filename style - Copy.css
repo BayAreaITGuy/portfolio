@@ -243,7 +243,7 @@ footer {
 }
 
 .zoom:hover {
-  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .zoom2 {
@@ -253,5 +253,5 @@ footer {
 }
 
 .zoom2:hover {
-  transform: scale(1.05); /* (715% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.10); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
