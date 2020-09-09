@@ -259,3 +259,13 @@ footer {
 .zoom2:hover {
   transform: scale(1.10); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.zoom3 {
+  padding: 10px;
+  transition: transform .1s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom3:hover {
+  transform: scale(1.4); /* (40% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
