@@ -226,8 +226,6 @@ footer {
   border-radius: 5px;
 }
 
-img:hover {opacity: .9;}
-
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
