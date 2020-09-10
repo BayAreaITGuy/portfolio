@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
     --main-white: #f0f0f0;
-    --main-red: #be3144;
+    --main-red: #c41532;
     --main-blue: #45567d;
     --main-gray: #303841;
 }
@@ -226,8 +230,6 @@ footer {
   border-radius: 5px;
 }
 
-img:hover {opacity: .9;}
-
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
@@ -238,17 +240,6 @@ img:hover {opacity: .9;}
   to {transform:scale(1)}
 }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
 .zoom {
   padding: 10px;
   transition: transform .2s; /* Animation */
@@ -256,5 +247,25 @@ img:hover {opacity: .9;}
 }
 
 .zoom:hover {
-  transform: scale(1.75); /* (715% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom2 {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom2:hover {
+  transform: scale(1.10); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom3 {
+  padding: 10px;
+  transition: transform .1s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom3:hover {
+  transform: scale(1.4); /* (40% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
