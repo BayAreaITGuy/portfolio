@@ -102,7 +102,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-gray);
+    background: #272d2d;
     border-top: 4px solid var(--main-red);
 }
 
@@ -113,14 +113,14 @@ footer {
     align-items: center;
     width: 100%;
     height: 125vh;
-    background-color: #000;
+    background-color: #1A1B41;
     /*background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);*/ /*use for a gradient bot left to top right*/
 }
 
 #projects {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: #6290C3;
 }
 
 .nav {
@@ -130,7 +130,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
+    background: #272d2d;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
@@ -165,7 +165,7 @@ footer {
     text-align: center;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: #1A1B41;
 }
 			
 #myImg {
@@ -202,12 +202,12 @@ footer {
   transform: scale(1.10); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.zoom3 {
+.zoombtn {
   padding: 10px;
   transition: transform .1s; /* Animation */
   margin: 0 auto;
 }
 
-.zoom3:hover {
-  transform: scale(1.4); /* (40% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.zoombtn:hover {
+  transform: scale(1.25); /* (40% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
