@@ -26,6 +26,7 @@ body {
     box-sizing: inherit;
 }
 
+/* scrollbar stuff */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -188,7 +189,7 @@ footer {
 }
 
 .zoom:hover {
-  transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.25); /* (25% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .zoom2 {
