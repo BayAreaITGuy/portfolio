@@ -126,7 +126,6 @@ footer {
 
 /* start of navbar stuff https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
 /* Icon 1 */
-
 .animated-icon1, .animated-icon2, .animated-icon3 {
   width: 30px;
   height: 20px;
@@ -206,7 +205,7 @@ footer {
   transform: rotate(-135deg);
   }
   
-  /* Icon 3*/
+  /* Icon 2*/
   
   .animated-icon2 span:nth-child(1) {
   top: 0px;
@@ -246,7 +245,7 @@ footer {
   left: 50%;
   }
   
-  /* Icon 4 */
+  /* Icon 3 */
   
   .animated-icon3 span:nth-child(1) {
   top: 0px;
@@ -363,31 +362,3 @@ footer {
   transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-/* bootstrap hamburger menu - from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ */
-.navbar.navbar-1 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
-}
-.navbar.navbar-2 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
-}
-.navbar.navbar-3 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
-}
-.navbar.navbar-4 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
-}
-.navbar.navbar-5 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=f3e5f5');
-}
-.navbar.navbar-6 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger8.svg?color=E3005C');
-}
-.navbar.navbar-7 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger9.svg?color=FF2C00');
-}
-.navbar.navbar-8 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
-}
-.navbar.navbar-9 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
-}
