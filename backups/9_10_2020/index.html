@@ -7,20 +7,16 @@
       <link href="style.css" rel="stylesheet" type="text/css">
 		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    <style>
+      nav {
+        height: 50px;
+      }
+    </style>
 		<title>Connor Readnour Portfolio</title>
-    </head>
-		<style>
-			nav {
-				height: 50px;
-			}
-			
-			.nav-list {
-				height: 20px;
-			}
-		</style>
+		</head>
     <body>
         <nav class="nav" id="navbar">
-            <ul class="nav-list">
+            <ul class="nav-list" style="height: 20px"> <!--if removed, nav doesn't work right on smaller devices -->
                 <li>
                     <a href="#welcome-section">About</a>
                 </li>
@@ -74,22 +70,20 @@
                 Bootstrap examples
             </h2>
         <div class="projects-grid">
-					<p class="project-title zoom2" style="color:white;">
+					
+					<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;Data Table, Side Nav Bar, Room Selector&nbsp;&#125;
 					</p>
-            <img alt="project" class="project-image img-thumbnail zoom2" src="img/teamSpaceScenario.png">
-					<p class="project-title zoom2" style="color:white;">
+            <img alt="project" class="project-image img-thumbnail zoom2" style="display: inline-block;" src="img/teamSpaceScenario.png">
+					<p class="project-title zoom2" style="color:white; display: inline-block;" >
 						&#123;&nbsp;Modal with Highlight Picker&nbsp;&#125;
 					</p>
-            <img alt="project" class="project-image img-thumbnail zoom2" src="img/teamSpaceModal.png">
-					<p class="project-title zoom2" style="color:white;">
-						&#123;&nbsp;Date Range Picker&nbsp;&#125;
-					</p>
-            <img alt="project" class="project-image img-thumbnail zoom2" src="img/dateRangePicker.PNG">
-					<p class="project-title zoom2" style="color:white;">
+            <img alt="project" class="project-image img-thumbnail zoom2" style="display: inline-block;" src="img/dateRangePicker.PNG">
+					<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;Upgrading old web page to Bootstrap&nbsp;&#125;
 					</p>
-            <img alt="project" class="project-image img-thumbnail zoom2" src="img/teamSpaceUpgrade.png">
+            <img alt="project" class="project-image img-thumbnail zoom2" style="display: inline-block;" src="img/teamSpaceUpgrade.png">
+						
         </div>
             <br />
             <br />
@@ -99,27 +93,27 @@
 					Here is some of my CAD / IWMS / Other work
 				</h2>
         <div class="projects-grid">
-					<p class="project-title zoom2" style="color:white;">
+					<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;AutoCAD Polylining example 1&nbsp;&#125;
 					</p>
             <img alt="project" class="project-image img-thumbnail zoom2" src="img/plines.PNG">
-					<p class="project-title zoom2" style="color:white;">
+					<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;AutoCAD Polylining example 2&nbsp;&#125;
 					</p>
             <img alt="project" class="project-image img-thumbnail zoom2" src="img/plines2.PNG">
-					<p class="project-title zoom2" style="color:white;" >
+					<p class="project-title zoom2" style="color:white; display: inline-block;" >
 						&#123;&nbsp;Revit Basic Home Model 1&nbsp;&#125;
 					</p>
             <img alt="project" class="project-image img-thumbnail zoom2" src="img/getting_started_sheet.PNG">
-					<p class="project-title zoom2" style="color:white;">
+					<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;Revit Basic Home Model 2&nbsp;&#125;
 					</p>
             <img alt="project" class="project-image img-thumbnail zoom2" src="img/getting_started_01.PNG">
-					<p class="project-title zoom2" style="color:white;">
+					<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;Excel Direct Connect Report&nbsp;&#125;
 					</p>
             <img alt="project" class="project-image img-thumbnail zoom2" src="img/exceldc.PNG">
-        	<p class="project-title zoom2" style="color:white;">
+        	<p class="project-title zoom2" style="color:white; display: inline-block;">
 						&#123;&nbsp;Monterrey Bay Aquarium Security Asset Project, from our Annual Company Presentation&nbsp;&#125;
 					</p>
             <img alt="project" class="project-image img-thumbnail zoom2" src="img/aq.PNG">
