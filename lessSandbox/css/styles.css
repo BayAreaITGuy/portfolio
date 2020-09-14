@@ -3,6 +3,10 @@ body {
   font-family: Tahoma;
   line-height: 2em;
 }
+footer p {
+  color: black;
+  text-align: center;
+}
 h1,
 h3 {
   border-top: dotted 1px #000;
