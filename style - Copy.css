@@ -123,7 +123,7 @@ footer {
     padding: 10rem 2rem;
     background: #6290C3;
 }
-
+/*
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -146,6 +146,179 @@ footer {
     font-size: 1rem;
     padding: 1rem;
 }
+*/
+
+/* start of navbar stuff https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
+/* Icon 1 */
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  }
+  
+  .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  }
+  
+  .animated-icon1 span {
+  background: #e65100;
+  }
+  
+  .animated-icon2 span {
+  background: #e3f2fd;
+  }
+  
+  .animated-icon3 span {
+  background: #f3e5f5;
+  }
+  
+  .animated-icon1 span:nth-child(1) {
+  top: 0px;
+  }
+  
+  .animated-icon1 span:nth-child(2) {
+  top: 10px;
+  }
+  
+  .animated-icon1 span:nth-child(3) {
+  top: 20px;
+  }
+  
+  .animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  }
+  
+  .animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+  }
+  
+  .animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  }
+  
+  /* Icon 3*/
+  
+  .animated-icon2 span:nth-child(1) {
+  top: 0px;
+  }
+  
+  .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+  top: 10px;
+  }
+  
+  .animated-icon2 span:nth-child(4) {
+  top: 20px;
+  }
+  
+  .animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+  
+  .animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+  
+  .animated-icon2.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  }
+  
+  .animated-icon2.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+  
+  /* Icon 4 */
+  
+  .animated-icon3 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }
+  
+  .animated-icon3.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+  }
+  
+  .animated-icon3.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+  }
+  
+  .animated-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 8px;
+  }
+  /*end of navbar stuff */
 
 .project-title {
     font-size: 2rem;
@@ -155,7 +328,7 @@ footer {
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    border-radius: 2px;
+    margin: 20px;
 }
 
 .contact-section {
@@ -183,15 +356,6 @@ footer {
   to {transform:scale(1)}
 }
 
-.zoom {
-  padding: 10px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  transform: scale(1.25); /* (25% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 
 .zoomImg {
   padding: 10px;
@@ -205,10 +369,49 @@ footer {
 
 .zoombtn {
   padding: 10px;
-  transition: transform .1s; /* Animation */
+  transition: transform .2s; /* Animation */
   margin: 0 auto;
 }
 
 .zoombtn:hover {
-  transform: scale(1.25); /* (40% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.20); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoomResume {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoomResume:hover {
+  transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* bootstrap hamburger menu - from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ */
+.navbar.navbar-1 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+.navbar.navbar-2 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+.navbar.navbar-3 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
+}
+.navbar.navbar-4 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+}
+.navbar.navbar-5 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=f3e5f5');
+}
+.navbar.navbar-6 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger8.svg?color=E3005C');
+}
+.navbar.navbar-7 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger9.svg?color=FF2C00');
+}
+.navbar.navbar-8 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+}
+.navbar.navbar-9 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
 }

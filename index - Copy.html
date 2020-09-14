@@ -16,26 +16,48 @@
 		<title>Connor Readnour Portfolio</title>
 		</head>
     <body>
-        <nav class="nav" id="navbar">
-            <ul class="nav-list" style="height: 20px"> <!--if removed, nav doesn't work right on smaller devices -->
-                <li>
-                    <a href="#welcome-section">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Work</a>
-                </li>
-								<li>
-                    <a href="#side-projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <!--Navbar-->
+      <nav class="navbar navbar-dark red lighten-1 mb-4" style="position: fixed; color:white;">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Navigation Menu</a>
+
+          <!-- Collapse button -->
+          <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarContent" style="background-color: #1A1B41; border-radius: 5px;">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#welcome-section" style="color:white; margin-left:5px;">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" style="color:white; margin-left:5px;">Work Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#side-projects" style="color:white; margin-left:5px;">Side Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color:white; margin-left:5px;">Contact Info</a>
+            </li>
+          </ul>
+          <!-- Links -->
+
+        </div>
+        <!-- Collapsible content -->
+
+      </nav>
+      <!--/.Navbar-->
+
         <!--Start of About section -->
         <section id="welcome-section">
-						<div style="text-align: center;" class="zoom"> <!--- add class="zoom" to get zoom effect-->
-							<img src="img/me.jpg" id="me" class="img-fluid img-thumbnail" alt="me!" style="width:90%; height:auto; max-width: 200px;">
+						<div style="text-align: center;" class="zoomImg"> <!--- add class="zoom" to get zoom effect-->
+							<img src="img/me.jpg" id="me" class="img-fluid img-thumbnail" alt="me!" style="width:100%; height:auto; max-width: 200px;">
 						</div>
             <h1 style="color:white;">
                 Connor Readnour
@@ -44,7 +66,7 @@
                 Front-End Web Development  &nbsp |  &nbsp  CAD &nbsp | &nbsp IWMS
             </p>
 			  <br>
-            <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" class="btn btn-dark" color="white">
+            <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" class="btn btn-dark zoombtn" color="white">
         		{&nbsp;Certified Responsive Web Design Developer&nbsp;}
         		</a>
 				<br>
@@ -60,7 +82,7 @@
 		
         
         <div style="text-align: center;"> <!--- add class="zoom" to get 1.5x zoom effect-->
-          <img id="myImg" src="img/resume/resume.PNG" alt="Resume" style="width:90%; height:auto; max-width: 800px;">
+          <img id="myImg" src="img/resume/resume.PNG" alt="Resume" style="width:90%; height:auto; max-width: 800px;" class="zoomResume">
         </div>
 				
         </section>
@@ -134,47 +156,47 @@
 					</div>
             <div class="projects-grid">
 						
-							<a href="bootstrap_cheatsheet/index.html" target="_blank" class="btn btn-success btn-lg zoombtn" color="white" style="margin-top: 20px;">
+							<a href="bootstrap_cheatsheet/index.html" target="_blank" class="btn btn-success btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;Bootstrap CheatSheet&nbsp;}
               </a>
 							
-              <a href="htmlcheatsheet/index.html" target="_blank" class="btn btn-success btn-lg zoombtn" color="white" style="margin-top: 20px;">
+              <a href="htmlcheatsheet/index.html" target="_blank" class="btn btn-success btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;HTML CheatSheet&nbsp;}
               </a>
 							
-							<a href="csscheatsheet/index.html" target="_blank" class="btn btn-success btn-lg zoombtn" color="white" style="margin-top: 20px;">
+							<a href="csscheatsheet/index.html" target="_blank" class="btn btn-success btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;CSS CheatSheet&nbsp;}
               </a>
 							
-							<a href="animatedLoginForm/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin-top: 20px;">
+							<a href="animatedLoginForm/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;Animated Login Form&nbsp;}
               </a>
 							
-							<a href="tribute-page/tribute.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin-top: 20px;">
+							<a href="tribute-page/tribute.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;freeCodeCamp's Tribute Page&nbsp;}
               </a>
 
-              <a href="mywebsite/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin-top: 20px;">
+              <a href="mywebsite/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;Example Website&nbsp;}
               </a>
 							
-							<a href="imageGallery/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="zoombtn" style="margin-top: 20px;">
+							<a href="imageGallery/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="zoombtn" style="margin: 15px;">
               {&nbsp;CSS FlexBox Image Gallery&nbsp;}
               </a>
 
-              <a href="lessSandbox/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="zoombtn" style="margin-top: 20px;">
+              <a href="lessSandbox/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="zoombtn" style="margin: 15px;">
                 {&nbsp;CSS LESS Project&nbsp;}
               </a>
               
-              <a href="carousel/index.html" target="_blank" class="btn btn-warning btn-lg zoombtn" color="white" style="margin-top: 20px;">
+              <a href="carousel/index.html" target="_blank" class="btn btn-warning btn-lg zoombtn" color="white" style="margin: 15px;">
                 {&nbsp;Typing Text Animation&nbsp;}
               </a>
 
-							<a href="rock-paper-scissors/index.html" target="_blank" class="btn btn-warning btn-lg zoombtn" color="white" style="margin-top: 20px;">
+							<a href="rock-paper-scissors/index.html" target="_blank" class="btn btn-warning btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;Rock Paper Scissors&nbsp;}
               </a>
 
-              <a href="snake/index.html" target="_blank" class="btn btn-warning btn-lg zoombtn" color="white" style="margin-top: 20px;">
+              <a href="snake/index.html" target="_blank" class="btn btn-warning btn-lg zoombtn" color="white" style="margin: 15px;">
               {&nbsp;Caterpillar&nbsp;}
               </a>
 
@@ -227,6 +249,23 @@
 			document.querySelector('.hello').scrollIntoView({ 
 				behavior: 'smooth' 
 			});
+
+      // Hamburger menu https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/
+      $(document).ready(function () {
+
+      $('.first-button').on('click', function () {
+
+        $('.animated-icon1').toggleClass('open');
+      });
+      $('.second-button').on('click', function () {
+
+        $('.animated-icon2').toggleClass('open');
+      });
+      $('.third-button').on('click', function () {
+
+        $('.animated-icon3').toggleClass('open');
+      });
+      });
 		</script>
 		</body>
 </html>
