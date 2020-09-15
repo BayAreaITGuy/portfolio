@@ -74,22 +74,15 @@ ul {
 
 h1 {
 	text-align: center;
-	color:white;
 }
 
 h2 {
 	text-align: center;
-	color:white;
-  text-shadow:  2px 2px black;
 }
 
 img {
 	width:80%;
 	max-height:auto;
-}
-
-#projects {
-	color:white;
 }
 
 .img-container {
@@ -121,7 +114,7 @@ footer {
 #projects {
     text-align: center;
     padding: 10rem 2rem;
-    background: #6290C3;
+    background: #f8f8ff;
 }
 
 /* start of navbar stuff https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
@@ -298,6 +291,12 @@ footer {
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
+}
+
+.project-image {
+  box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
+              0 15px 35px rgba(50, 50, 93, .2), 
+              0 5px 15px rgba(0, 0, 0, .12);
 }
 
 .btn {
