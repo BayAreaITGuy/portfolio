@@ -94,7 +94,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: #272d2d;
+    background: #1A1B41;
     border-top: 4px solid var(--main-red);
 }
 
@@ -313,7 +313,7 @@ footer {
     text-align: center;
     height: 80vh;
     padding: 0 2rem;
-    background: #1A1B41;
+    background: #f8f8ff;
 }
 			
 #myImg {
