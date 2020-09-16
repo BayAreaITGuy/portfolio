@@ -277,7 +277,6 @@ footer {
 }
 
 .zoomResume {
-  padding: 10px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
 }
