@@ -20,11 +20,11 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: white;
-  animation: fadeInAnimation ease 3s; 
+  animation: fadeInAnimation ease 2s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
 }
-
+/* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
 @keyframes fadeInAnimation { 
   0% { 
       opacity: 0; 
