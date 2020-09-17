@@ -27,11 +27,11 @@ document.body.appendChild(my_element2);
 let my_element3 = document.createElement('div');
 let my_p = document.createElement('p');
 
-my_p.innerText = "This sentence uses the second custom class";
+my_p.innerText = "<p> within a <div> using the 3rd and 5th custom class!";
 
 my_element3.appendChild(my_p);
 
-my_element3.classList.add('custom_class2');
+my_element3.classList.add('custom_class5','custom_class3');
 
 document.body.appendChild(my_element3);
 
@@ -55,3 +55,24 @@ img.src = "https://media.customon.com/unsafe/600x600/img.customon.com//art/2/600
 img.classList.add('custom_class4');
 
 document.body.appendChild(img);
+
+/*hello world H1*/
+let my_h1 = document.createElement('h1');
+
+my_h1.innerText = 'Hello world!';
+
+my_h1.classList.add('custom_class3');
+
+document.body.appendChild(my_h1);
+
+/*textarea*/
+let my_textarea = document.createElement('textarea');
+
+my_textarea.innerText = "textarea textarea textarea";
+
+my_textarea.classList.add("text_class");
+
+document.body.appendChild(my_textarea);
+
+let my_ul = document.createElement('ul');
+

@@ -1,5 +1,6 @@
 .custom_class {
   color: pink;
+  text-align: center;
 }
 .custom_class2 {
   background-color: rgb(192, 255, 197);
@@ -15,4 +16,17 @@
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
+}
+.custom_class5 {
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: right;
+}
+.text_class {
+  background-color: rgb(26, 223, 230);
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
