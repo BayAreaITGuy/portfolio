@@ -121,7 +121,7 @@ footer {
     align-items: center;
     width: 100%;
     height: 200vh;
-    background-color: #f8f8ff;
+    background: #f8f8ff;
     /*background-image: linear-gradient(0deg, #f8f8ff 0%, #1A1B41 250%); /*use for a gradient top to bot*/
 }
 
