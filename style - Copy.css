@@ -24,6 +24,7 @@ body {
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
 }
+
 /* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
 @keyframes fadeInAnimation { 
   0% { 
