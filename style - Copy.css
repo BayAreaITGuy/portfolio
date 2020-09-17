@@ -301,3 +301,8 @@ margin: 0 auto;
 transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+/* dark mode https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode*/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
