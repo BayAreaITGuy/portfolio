@@ -14,10 +14,8 @@
     <body>
       <!--Navbar-->
       <nav class="navbar " style="position: fixed; color:#f8f8ff; background-color: #1A1B41; border-radius: 5px; margin: 5px;">
-
         <!-- Navbar brand -->
         <!--<a class="navbar-brand">Nav Menu</a> -->
-
           <!-- Collapse button -->
         <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
           aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +25,8 @@
             <span></span>
           </div>
         </button>
-        
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="navbarContent">
-
           <!--Nav Menu Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -47,14 +43,11 @@
             </li>
           </ul>
           <!-- end Links -->
-
         </div>
         <!-- end Collapsible content -->
-
       </nav>
       <!--/. end Navbar-->
-
-        <!--Start of About section -->
+      <!--Start of About section -->
         <section id="welcome-section">
           <h1 style="color:#FD6585;">
             Connor Readnour
@@ -62,41 +55,39 @@
 						<div style="text-align: center;" class="zoomImg"> <!--- add class="zoom" to get zoom effect-->
 							<img src="img/me.jpg" id="me" class="img-fluid img-thumbnail" alt="me!" style="width:100%; height:auto; max-width: 250px;">
             </div>
-            <br>
-            
-            <h4 class="projects-section-header " style="color:#FD6585; text-align: center;">
-                Front-End Web Development &nbsp; | &nbsp;  CAD &nbsp; | &nbsp; IWMS &nbsp;| Data Analysis & Testing
-            </h4>
-            <br>
-            <!-- Certification Header-->
-            <h2 class="projects-section-header " style="color:#FD6585; text-align: center;">
-              Certified Responsive Web Design Developer
-            </h2>
-            <h6 class="projects-section-header " >
-              <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" style="color:#FD6585;">Click here to verify certification</a>
-            </h6>
-            <br>
-      
-            <div style="text-align: center;" class="zoomResume"> <!--- add class="zoom" to get zoom effect-->
-              <img src="img/responsiveWebDesignCert.jpg" id="cert" class="img-fluid img-thumbnail" alt="certification" style="width:100%; height:auto; max-width: 900px;">
-            </div>
-            <br>
-            <!-- Resume header-->
-
-            <h2 class="projects-section-header " style="color:#FD6585;">
-              My Resume
-            </h2>
-            
-            <h6 class="projects-section-header " >
-              <a href="workfiles/Connor_Readnour_Resume_Port.pdf" target="_blank" style="color:#FD6585;">Click here for PDF</a>
-            </h6>
-            <br>
-
+          <br>
+          <!--Typerwriter start https://codepen.io/hi-im-si/pen/DHoup-->
+          <h4> 
+            <a href="" class="typewrite" style="color:#FD6585; text-decoration: none;" data-period="2000" data-type='[ "Front-End Web Development | IWMS | CAD | Data Analysis & Testing"]'></a>
+              <span class="wrap"></span>
+            </a>
+          </h4>
+          <!--Typewriter end-->
+          <br>
+          <!-- Certification Header-->
+          <h2 class="projects-section-header " style="color:#FD6585; text-align: center;">
+            Certified Responsive Web Design Developer
+          </h2>
+          <h6 class="projects-section-header " >
+            <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" style="color:#FD6585;">Click here to verify certification</a>
+          </h6>
+          <br>
+          <div style="text-align: center;" class="zoomResume"> <!--- add class="zoom" to get zoom effect-->
+            <img src="img/responsiveWebDesignCert.jpg" id="cert" class="img-fluid img-thumbnail" alt="certification" style="width:100%; height:auto; max-width: 900px;">
+          </div>
+          <br>
+          <!-- Resume header-->
+          <h2 class="projects-section-header " style="color:#FD6585;">
+            My Resume
+          </h2>
+          <h6 class="projects-section-header " >
+            <a href="workfiles/Connor_Readnour_Resume_Port.pdf" target="_blank" style="color:#FD6585;">Click here for PDF</a>
+          </h6>
+          <br>
           <div style="text-align: center;" class="myImg"> <!--- add class="zoom" to get 1.5x zoom effect-->
             <img id="myImg" src="img/resume/resume.PNG" alt="Resume" style="width:90%; height:auto; max-width: 800px;" class="zoomResume">
           </div>
           <br>  
-
         </section>
        <!--End of About section -->
        <!--Start of Boostrap work -->
@@ -247,6 +238,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
+      // typewriter https://codepen.io/hi-im-si/pen/DHoup
+      var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 100 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+      //end of typewriter
+
 			// Scroll to specific values - from https://css-tricks.com/snippets/jquery/smooth-scrolling/
 			// scrollTo is the same
 			window.scroll({
