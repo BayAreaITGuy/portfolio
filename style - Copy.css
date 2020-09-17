@@ -203,7 +203,6 @@ top: 11px;
 -o-transform: rotate(-135deg);
 transform: rotate(-135deg);
 }
-
 /*end of navbar stuff */
 
 .project-title {
@@ -271,7 +270,7 @@ from {transform:scale(0)}
 to {transform:scale(1)}
 }
 
-
+/*start of zoom code */
 .zoomImg {
 padding: 10px;
 transition: transform .2s; /* Animation */
@@ -300,9 +299,4 @@ margin: 0 auto;
 .zoomResume:hover {
 transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
-/* dark mode https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode*/
-.dark-mode {
-  background-color: black;
-  color: white;
-}
+/* end zoom code */
