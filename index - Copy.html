@@ -265,7 +265,7 @@
             this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
             var that = this;
-            var delta = 100 - Math.random() * 100;
+            var delta = 100 - Math.random() * 100; // higher delta = slower typing
 
             if (this.isDeleting) { delta /= 2; }
 
