@@ -22,9 +22,9 @@
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
         var that = this;
-        var delta = 100 - Math.random() * 100; // higher delta = slower typing
+        var delta = 85 - Math.random() * 100; // higher delta = slower typing
 
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) { delta /= 3; } // higher delta = quicker deletion
 
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;

@@ -114,10 +114,6 @@ width:80%;
 max-height:auto;
 }
 
-.img-container {
-      text-align: center;
-}
-
 footer {
   font-weight: 300;
   display: flex;
@@ -223,17 +219,17 @@ transform: rotate(-135deg);
   padding: 2rem 0.5rem;
 }
 
-.project-image {
-box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-0 15px 35px rgba(50, 50, 93, .2), 
-0 5px 15px rgba(0, 0, 0, .12);
-}
-
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   margin: 20px;
 }
+
+.project-image {
+  box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
+  0 15px 35px rgba(50, 50, 93, .2), 
+  0 5px 15px rgba(0, 0, 0, .12);
+  }
 
 .myImage {
 box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
@@ -247,6 +243,13 @@ box-shadow: 0 50px 100px rgba(50, 50, 93, .15),
 0 15px 35px rgba(50, 50, 93, .2), 
 0 5px 15px rgba(0, 0, 0, .12);
 }
+
+#myResume {
+  border-radius: 5px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
+  0 15px 35px rgba(50, 50, 93, .2), 
+  0 5px 15px rgba(0, 0, 0, .12);
+  }
 
 #cert {
 border-radius: 15px;
