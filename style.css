@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 text-align: center;
 color: rgb(211, 207, 207);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+word-wrap: break-word;
 }
 h1 {
   padding-top:5vh; 
@@ -173,9 +174,6 @@ footer {
 /* start card stuff */
 .wrapper {
   text-align: center;
-  }
-  p {
-    word-wrap: break-word;
   }
   .img-area {
   display: flex;
