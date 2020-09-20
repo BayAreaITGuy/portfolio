@@ -11,7 +11,7 @@
 		</head>
     <body>
       <!--Navbar-->
-      <nav class="navbar " style="position: fixed; color:#f8f8ff; background-color: #1A1B41; border-radius: 5px; margin: 5px;">
+      <nav class="navbar " style="position: fixed;  background-color: #1A1B41; border-radius: 5px; margin: 5px;">
         <!-- Navbar brand -->
         <!--<a class="navbar-brand">Nav Menu</a> -->
           <!-- Collapse button -->
@@ -28,19 +28,19 @@
           <!--Nav Menu Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#welcome-section" style="color:#f8f8ff; margin-left:12px; display: inline-block;">About Section</a>
+              <a class="nav-link" href="#welcome-section" style="margin-left:12px; display: inline-block;">About Section</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects" style="color:#f8f8ff; margin-left:12px; display: inline-block;">Website Improvements</a>
+              <a class="nav-link" href="#projects" style="margin-left:12px; display: inline-block;">Website Improvements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#autocad" style="color:#f8f8ff; margin-left:12px; display: inline-block;">AutoCAD & Revit</a>
+              <a class="nav-link" href="#autocad" style="margin-left:12px; display: inline-block;">AutoCAD & Revit</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#side-projects" style="color:#f8f8ff; margin-left:12px; display: inline-block;">Side Projects</a>
+              <a class="nav-link" href="#side-projects" style="margin-left:12px; display: inline-block;">Side Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact" style="color:#f8f8ff; margin-left:12px; display: inline-block;">Contact Info</a>
+              <a class="nav-link" href="#contact" style="margin-left:12px; display: inline-block;">Contact Info</a>
             </li>
           </ul>
           <!-- end Links -->
@@ -49,8 +49,8 @@
       </nav>
       <!--/. end Navbar-->
       <!--Start of About section -->
-        <section id="welcome-section">
-          <h1 style="color:#FD6585; padding-top: 50px;">
+      <div id="welcome-section" class="wrapper site-background">
+          <h1>
             Connor Readnour
           </h1>
 						<div class="center"> <!--- add class="zoom" to get zoom effect-->
@@ -59,171 +59,137 @@
           <br>
           <!--Typerwriter start https://codepen.io/hi-im-si/pen/DHoup-->
           <h4> 
-            <a href="" class="typewrite" style="color:#FD6585; text-decoration: none;" data-period="2000" data-type='[ "Front-End Web Development | IWMS | CAD | Data Analysis & Testing","Welcome to my Portfolio!"]'></a>
+            <a href="" class="typewrite" style="text-decoration: none; color:rgb(211, 207, 207);" data-period="2000" data-type='[ "Front-End Web Development | IWMS | CAD | Data Analysis & Testing","Welcome to my Portfolio!"]'></a>
               <span class="wrap"></span>
           </h4>
           <!--Typewriter end-->
           <br>
           <!-- Resume header-->
           <!--column left side -->
-          <div class="left-half center">
-            <h2 class="" style="color:#FD6585;">
-              My Resume
-            </h2>
-            <h6 class="" >
-              <a href="workFiles/Connor_Readnour_Resume_Port.pdf" target="_blank" style="color:#FD6585;">Click here for PDF</a>
-            </h6>
-            <br>
-            <div> <!--- add class="zoom" to get 1.5x zoom effect-->
-              <img src="img/resume/resume.PNG" class="img-fluid img-thumbnail" alt="Resume" style="height:auto; max-width: 800px;">
+          <div class="img-area">
+            <!-- flex  box resume -->
+            <div class="single-img">
+              <img alt="Resume" class="img-fluid img-thumbnail zoomSmall" src="img/resume/resume.PNG" style="width:100%; height:auto; max-width: 600px; ">
+              <p> <a href="workFiles/Connor_Readnour_Resume_Port.pdf" target="_blank" >Click here for PDF</a></p>
+            </div>
+            <!-- flex  box cert -->
+            <div class="single-img">
+              <img alt="responsive-web-design-cert" class="img-fluid img-thumbnail zoomSmall" src="img/responsiveWebDesignCert.jpg" style="width:100%; height:auto; max-width: 800px; ">
+              <p><a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank">Click Here to verify</a></p>
+            </div>
+          </div>      
+        </div>
+       <!--End of About section -->
+       <!--Start of  web Development work -->
+       <div class="wrapper site-background">
+        <h1 id="projects">Web Development Gallery</h1>
+          <div class="img-area">
+            <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+              <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/teamSpaceScenario.PNG" >
+              <a href="img/teamSpaceScenario.PNG" target="_blank" ><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">Bootstrap Upgrade 1</span></p></a>
+            </div>
+            <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+              <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/teamSpaceUpgrade.png" >
+              <a href="img/teamSpaceUpgrade.png" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">Bootstrap Upgrade 2</span></p></a>
+            </div>
+            <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+              <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/sv5/room.png" >
+              <a href="img/sv5/room.png" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">Bootstrap Upgrade 3</span></p></a>
+            </div>  
+            <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+              <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/sv5/buildings.png">
+              <a href="img/sv5/buildings.png" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">Bootstrap Upgrade 4</span></p></a>
             </div>
           </div>
-          <!--end of resume-->
-          <!-- Certification Header-->
-          <div class="right-half center">
-            <h2 style="color:#FD6585;">
-              Certified Responsive Web Design Developer
-            </h2>
-            <h6>
-              <a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" style="color:#FD6585;">Click here to verify certification</a>
-            </h6>
-            <br>
-            <!-- certification picture-->
-            <div> <!--- add class="zoom" to get zoom effect-->
-              <img src="img/responsiveWebDesignCert.jpg" class="img-fluid img-thumbnail" alt="certification" style="height:auto; max-width: 900px;">
-            </div>  
-          </div>        
-          <br>  
-        </section>
-       <!--End of About section -->
-       <!--Start of Boostrap work -->
-        <section>
-            <div class="projects-grid center">
-              <h2 id="projects" class="center" style="color:#FD6585; display: inline-block; padding-top:200px;">
-                Below are examples of my professional web designs & upgrades, made with the Bootstrap front-end framework.
-              </h2>
-              <!--bootstrap example -->
-              <p class="project-title" style="color:#FD6585; display: block;">
-                <!-- {&nbsp;Data Table, Side Nav Bar, Room Selector&nbsp;} -->
-              </p>
-                <img alt="project" class="project-image img-thumbnail" src="img/teamSpaceScenario.PNG">
-              <!--bootstrap example -->
-              <p class="project-title " style="color:#FD6585; display: block;">
-                <!-- {&nbsp;Upgrading old web page to Bootstrap&nbsp;} -->
-              </p>
-                <img alt="project" class="project-image img-thumbnail" src="img/teamSpaceUpgrade.png">
-              <!--bootstrap example -->
-              <p class="project-title " style="color:#FD6585; display: block;">
-                <!-- {&nbsp;Upgrading this Portfolio&nbsp;} -->
-              </p>
-                <img alt="project" class="project-image img-thumbnail" src="img/portfolioUpgrade.PNG"> 
-            </div>
+          <!--End of web Development work -->
+          <!--Start of CAD/CAFM work -->  
+          <!--card start-->
+          <div class="wrapper site-background">
+            <h1 id="autocad">CAD & Revit gallery</h1>
+              <div class="img-area">
+                <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+                  <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/plines.PNG" >
+                  <a href="img/plines.PNG" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">AutoCAD Polylines 1</span></p></a>
+                </div>
+                <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+                  <img alt="Polyline example 2" class="project-image img-thumbnail example-img-size single-img" src="img/plines2.PNG" >
+                  <a href="img/plines2.PNG" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">AutoCAD Polylines 2</span></p></a>
+                </div>
+                <div class="single-img zoom" style="background-color:white; border-radius: 25px; margin-top: 30px;">
+                  <img alt="Sample Revit model home" class="project-image img-thumbnail example-img-size single-img" src="img/getting_started_sheet.PNG" >
+                  <a href="img/getting_started_sheet.PNG" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">Revit Home Model 1</span></p></a>
+                </div> 
+                <div class="single-img zoom"style="background-color:white; border-radius: 25px; margin-top: 30px;">
+                  <img alt="Sample Revit model home" class="project-image img-thumbnail example-img-size single-img" src="img/getting_started_01.PNG" >
+                  <a href="img/getting_started_01.PNG" target="_blank"><p style="color:black;"><span class="btn btn-success btn-sm zoombtn">Revit Home Model 2</span></p></a>
+                </div>
+              </div>       
+            <!-- card end-->
+            <!--Start of Side Proejects -->
             <br />
-            <br />
-            <!--End of Boostrap work -->
-            <!--Start of CAD/CAFM work -->          
-              <div class="center">
-                <h2 id="autocad" class="center" style="color:#FD6585; display: inline-block; padding-top:200px;">
-                  Here are a few samples of my AutoCAD Polylining, Revit Examples, and some other work I'm proud of.
-                </h2>
-                <!--cad/cafm/other example-->
-                <p class="project-title " style="color:#FD6585; display: block;">
-                  <!-- {&nbsp;AutoCAD Polylining example 1&nbsp;} -->
-                </p>
-                  <img alt="project" class="project-image img-thumbnail" src="img/plines.PNG" >
-                <!--cad/cafm/other example--> 
-                <p class="project-title " style="color:#FD6585; display: block;">
-                  <!-- {&nbsp;AutoCAD Polylining example 2&nbsp;} -->
-                </p>
-                  <img alt="project" class="project-image img-thumbnail" src="img/plines2.PNG">
-                <!--cad/cafm/other example-->
-                <p class="project-title " style="color:#FD6585; display: block;" >
-                  <!-- {&nbsp;Revit Basic Home Model 1&nbsp;} -->
-                </p>
-                  <img alt="project" class="project-image img-thumbnail" src="img/getting_started_sheet.PNG">
-                <!--cad/cafm/other example-->
-                <p class="project-title " style="color:#FD6585; display: block;">
-                  <!-- {&nbsp;Revit Basic Home Model 2&nbsp;} -->
-                </p>
-                  <img alt="project" class="project-image img-thumbnail" src="img/getting_started_01.PNG">
-                <!--cad/cafm/other example-->
-                <!-- <p class="project-title " style="color:#FD6585; display: block;">
-                  {&nbsp;Excel Direct Connect Report&nbsp;}
-                </p> -->
-                  <!-- <img alt="project" class="project-image img-thumbnail" src="img/exceldc.PNG"> -->
-                <!--cad/cafm/other example-->
-                <p class="project-title " style="color:#FD6585; display: block;">
-                  <!-- {&nbsp;Monterey Bay Aquarium Security Asset Project, slide from the RSC Annual Company Presentation&nbsp;} -->
-                </p>
-                  <img alt="project" class="project-image img-thumbnail" src="img/aq.PNG">
+            <h1 id="side-projects" class="center site-background">
+              Side Projects
+            </h1>
+            <!--side project buttons start-->
+              <div class="center site-background">
+                <a href="bootstrap_cheatsheet/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;Bootstrap CheatSheet&nbsp;}</a>
+                <a href="htmlcheatsheet/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;HTML CheatSheet&nbsp;}</a>
+                <a href="csscheatsheet/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;CSS CheatSheet&nbsp;}
+                </a>
+                <a href="animatedLoginForm/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;Animated Login Form&nbsp;}
+                </a>
+                <a href="tribute-page/tribute.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;freeCodeCamp's Tribute Page&nbsp;}
+                </a>
+                <a href="mywebsite/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;Example Website&nbsp;}
+                </a>
+                <a href="imageGallery/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;CSS FlexBox Image Gallery&nbsp;}
+                </a>
+                <a href="lessSandbox/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                  {&nbsp;CSS LESS Project&nbsp;}
+                </a>
+                <a href="JavaScriptPractice/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                  {&nbsp;JavaScript DOM Elements&nbsp;}
+                </a>
+                <a href="carousel/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                  {&nbsp;Typing Text Animation&nbsp;}
+                </a>
+                <a href="rock-paper-scissors/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;Rock Paper Scissors&nbsp;}
+                </a>
+                <a href="snake/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
+                {&nbsp;Caterpillar&nbsp;}
+                </a>
               </div>
-          </section>
-				  <!-- End of CAD/CAFM work  -->
-          <!--Start of Side Proejects -->
-					<br />
-        <section id="side-projects">
-          <h2 class="center" style="color:#FD6585;  padding-top:200px; padding-bottom:100px;">
-            And some side projects I've completed in my spare time.
-          </h2>
-          <!--side project buttons start-->
-            <div class="center">
-							<a href="bootstrap_cheatsheet/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;Bootstrap CheatSheet&nbsp;}</a>
-							<a href="htmlcheatsheet/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;HTML CheatSheet&nbsp;}</a>
-							<a href="csscheatsheet/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;CSS CheatSheet&nbsp;}
-              </a>
-							<a href="animatedLoginForm/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;Animated Login Form&nbsp;}
-              </a>
-							<a href="tribute-page/tribute.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;freeCodeCamp's Tribute Page&nbsp;}
-              </a>
-              <a href="mywebsite/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;Example Website&nbsp;}
-              </a>
-							<a href="imageGallery/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;CSS FlexBox Image Gallery&nbsp;}
-              </a>
-              <a href="lessSandbox/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-                {&nbsp;CSS LESS Project&nbsp;}
-              </a>
-              <a href="JavaScriptPractice/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-                {&nbsp;JavaScript DOM Elements&nbsp;}
-              </a>
-              <a href="carousel/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-                {&nbsp;Typing Text Animation&nbsp;}
-              </a>
-							<a href="rock-paper-scissors/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;Rock Paper Scissors&nbsp;}
-              </a>
-              <a href="snake/index.html" target="_blank" class="btn btn-info btn-lg zoombtn" color="white" style="margin: 15px;">
-              {&nbsp;Caterpillar&nbsp;}
-              </a>
             </div>
-          <!--side project buttons start-->
+          <!--side project buttons end-->
         </section>
-        <section class="contact-section" id="contact">
-            <div class="contact-section-header" style="color:#FD6585;">
+        <section id="contact" class="contact-section site-background" >
+            <div class="contact-section-header">
                 <h2>
                     Let's work together!
                 </h2>
             </div>
             <div class="contact-links">
                 <!-- <a style="color:white;" class="btn contact-details" href="https://www.linkedin.com/in/connorreadnour/" id="profile-link" target="_blank"> used for white color and target blank href-->
-                <a class="btn contact-details" href="https://www.linkedin.com/in/connorreadnour/" style="color:#FD6585;">    
+                <a class="btn contact-details" href="https://www.linkedin.com/in/connorreadnour/">    
 										LinkedIn&nbsp;<i style="font-size:24px" class="fa">&#xf2b5;</i>
                 </a>
-                <a class="btn contact-details" href="mailto:connorreadnour@gmail.com" style="color:#FD6585;">
+                <a class="btn contact-details" href="mailto:connorreadnour@gmail.com">
 										Email&nbsp;<i style="font-size:24px" class="fa">&#xf003;</i>
                 </a>
-                <a class="btn contact-details" href="tel:630-639-6677" style="color:#FD6585;">
+                <a class="btn contact-details" href="tel:630-639-6677">
                     Phone&nbsp;<i style="font-size:24px" class="fa">&#xf10b;</i>
                 </a>
             </div>
         </section>
-        <footer style="color:#f8f8ff; text-align:center;">
+        <footer style="text-align:center;">
             <p>
                 © Created by Connor Readnour
             </p>
@@ -232,5 +198,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="myFile.js"></script>
+    <script>
+      document.body.style.backgroundColor = "rgb(211, 207, 207);";
+    </script>
   </body>
 </html>

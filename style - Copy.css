@@ -18,7 +18,8 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.4;
-  color: white;
+  /* background-color: grey;
+  background: grey; */
   animation: fadeInAnimation ease 2s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
@@ -68,27 +69,20 @@ text-decoration: underline;
 ul {
   list-style: none;
 }
+h1, h2, h3, h4, h5, h6, p, a {
+text-align: center;
+color: rgb(211, 207, 207);
+}
 h1 {
-text-align: center;
+  padding-top:5vh; 
+  padding-bottom:5vh;
 }
-h2 {
-text-align: center;
+li {
+text-align: left;
+color: rgb(211, 207, 207);
 }
-h3 {
-text-align: center;
-}
-h4 {
-text-align: center;
-}
-h5 {
-text-align: center;
-}
-h6 {
-text-align: center;
-}
-img {
-width:80%;
-max-height:auto;
+.siteFont {
+  color: grey;
 }
 footer {
   font-weight: 300;
@@ -97,6 +91,9 @@ footer {
   padding: 2rem;
   background: #1A1B41;
   border-top: 4px solid var(--main-red);
+}
+.site-background{
+  background-color: rgb(34, 41, 39);
 }
 /* start of navbar stuff https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
 /* Icon 1 */
@@ -172,12 +169,46 @@ footer {
   padding: 1rem 2rem;
   margin: 20px;
 }
+/* start card stuff */
+.wrapper {
+  text-align: center;
+  }
+  p {
+    word-wrap: break-word;
+  }
+  .img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  }
+  .single-img{
+  padding:0 20px 20px;
+  }
+  .example-img-size {
+      width: 300px;
+      height: 300px;
+  }
+  
+  .zoom {
+    padding: 10px;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  /*end card stuff */
+/*
 img {
   border-radius: 5px;
   box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
   0 15px 35px rgba(50, 50, 93, .2), 
   0 5px 15px rgba(0, 0, 0, .12);
 }
+*/
 /*image shadows and border radius */
 /*
 .project-image {
@@ -236,7 +267,6 @@ box-shadow: 0 25px 50px rgba(50, 50, 93, .15),
   text-align: center;
   height: 80vh;
   padding: 0 2rem;
-  background: #f8f8ff;
 }
 /* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
 @keyframes fadeInAnimation { 
@@ -256,13 +286,6 @@ from {transform:scale(0)}
 to {transform:scale(1)}
 }
 /*start of zoom code */
-.zoomImg {
-transition: transform .5s all ease-in-out; /* Animation */
-margin: 0 auto;
-}
-.zoomImg:hover {
-transform: scale(1.5); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 .zoombtn {
 padding: 10px;
 transition: transform .2s; /* Animation */
@@ -271,11 +294,12 @@ margin: 0 auto;
 .zoombtn:hover {
 transform: scale(1.20); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.zoomResume {
-transition: transform .2s; /* Animation */
-margin: 0 auto;
-}
-.zoomResume:hover {
-transform: scale(1.05); /* (5% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+.zoomSmall {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  }
+  .zoomSmall:hover {
+  transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 /* end zoom code */
