@@ -89,8 +89,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: #1A1B41;
-  border-top: 4px solid var(--main-red);
+  background: rgb(33, 36, 35);
+  border-top: 4px solid lightblue;
 }
 .site-background{
   background-color: rgb(34, 41, 39);
