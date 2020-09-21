@@ -173,42 +173,40 @@ footer {
 }
 /* start card stuff */
 .wrapper {
-  text-align: center;
-  }
-  .img-area {
-  display: flex;
+text-align: center;
+}
+.img-area {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.single-img{
+padding:0 20px 20px;
+}
+.text-area {
+  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  }
-  .single-img{
-  padding:0 20px 20px;
-  }
-  .text-area {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .example-img-size {
-      width: 300px;
-      height: 300px;
-  }
-  
-  .zoom {
-    padding: 10px;
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-  }
-
-  .zoom:hover {
-    transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+  max-width: 800px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.example-img-size {
+    width: 300px;
+    height: 300px;
+}
+.zoom {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
   /*end card stuff */
 /*
 img {
@@ -304,11 +302,11 @@ margin: 0 auto;
 transform: scale(1.20); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .zoomSmall {
-  padding: 10px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-  }
-  .zoomSmall:hover {
-  transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+padding: 10px;
+transition: transform .2s; /* Animation */
+margin: 0 auto;
+}
+.zoomSmall:hover {
+transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 /* end zoom code */
