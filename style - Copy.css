@@ -185,6 +185,16 @@ footer {
   .single-img{
   padding:0 20px 20px;
   }
+  .text-area {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   .example-img-size {
       width: 300px;
       height: 300px;
