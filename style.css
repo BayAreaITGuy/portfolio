@@ -2,11 +2,27 @@
   margin: 0;
   padding: 0;
 }
-
+/* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)}
+to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+/* end body and key frames animation */
 html {
 scroll-behavior: smooth;
 }
-
 :root {
   --main-white: #f0f0f0;
   --main-red: #c41532;
@@ -18,8 +34,6 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.4;
-  /* background-color: grey;
-  background: grey; */
   animation: fadeInAnimation ease 2s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
@@ -47,6 +61,7 @@ background: #888;
 ::-webkit-scrollbar-thumb:hover {
 background: #555;
 }
+/* end scrollbar stuff */
 a:link {
 color: white;
 text-decoration: none;
@@ -69,7 +84,11 @@ text-decoration: underline;
 ul {
   list-style: none;
 }
-h1, h2, h3, h4, h5, h6, p, a {
+ul li a {
+  margin-left:12px; 
+  display: inline-block;
+}
+h1, h2, h3, h4, h5, h6, p {
 text-align: center;
 color: rgb(211, 207, 207);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,9 +102,6 @@ li {
 text-align: left;
 color: rgb(211, 207, 207);
 }
-.siteFont {
-  color: grey;
-}
 footer {
   font-weight: 300;
   display: flex;
@@ -94,8 +110,15 @@ footer {
   background: rgb(33, 36, 35);
   border-top: 4px solid lightblue
 }
+.iAbout {
+  color:white; 
+  margin-left: 5px;
+}
 .site-background{
   background-color: rgb(34, 41, 39);
+}
+.siteFont {
+  color: grey;
 }
 /* start of navbar stuff https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
 /* Icon 1 */
@@ -162,10 +185,6 @@ footer {
   transform: rotate(-135deg);
   }
   /*end of navbar stuff */
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -199,69 +218,6 @@ padding:0 20px 20px;
     width: 300px;
     height: 300px;
 }
-.zoom {
-  padding: 10px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-}
-.zoom:hover {
-  transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-  /*end card stuff */
-/*
-img {
-  border-radius: 5px;
-  box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-  0 15px 35px rgba(50, 50, 93, .2), 
-  0 5px 15px rgba(0, 0, 0, .12);
-}
-*/
-/*image shadows and border radius */
-/*
-.project-image {
-  box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-  0 15px 35px rgba(50, 50, 93, .2), 
-  0 5px 15px rgba(0, 0, 0, .12);
-  }
-.myImage {
-box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-0 15px 35px rgba(50, 50, 93, .2), 
-0 5px 15px rgba(0, 0, 0, .12);
-}
-#myImg {
-border-radius: 15px;
-box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-0 15px 35px rgba(50, 50, 93, .2), 
-0 5px 15px rgba(0, 0, 0, .12);
-}
-#myResume {
-  border-radius: 5px;
-  box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-  0 15px 35px rgba(50, 50, 93, .2), 
-  0 5px 15px rgba(0, 0, 0, .12);
-  }
-#cert {
-border-radius: 15px;
-box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 
-0 15px 35px rgba(50, 50, 93, .2), 
-0 5px 15px rgba(0, 0, 0, .12);
-}
-#me {
-border-radius: 15px;
-box-shadow: 0 25px 50px rgba(50, 50, 93, .15), 
-0 15px 35px rgba(50, 50, 93, .2), 
-0 5px 15px rgba(0, 0, 0, .12);
-}
-*/
-/* Pattern styles */
-.left-half {
-  float: left;
-  width: 50%;
-}
-.right-half {
-  float: left;
-  width: 50%;
-}
 .center {
   text-align: center;
   align-items: center;
@@ -287,32 +243,7 @@ box-shadow: 0 25px 50px rgba(50, 50, 93, .15),
   height: 80vh;
   padding: 0 2rem;
 }
-/* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-  } 
-} 
-@-webkit-keyframes zoom {
-from {-webkit-transform:scale(0)}
-to {-webkit-transform:scale(1)}
-}
-@keyframes zoom {
-from {transform:scale(0)}
-to {transform:scale(1)}
-}
 /*start of zoom code */
-.zoombtn {
-padding: 10px;
-transition: transform .2s; /* Animation */
-margin: 0 auto;
-}
-.zoombtn:hover {
-transform: scale(1.20); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 .zoomSmall {
 padding: 10px;
 transition: transform .2s; /* Animation */
@@ -320,5 +251,13 @@ margin: 0 auto;
 }
 .zoomSmall:hover {
 transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.25); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 /* end zoom code */
