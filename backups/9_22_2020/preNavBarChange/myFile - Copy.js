@@ -1,22 +1,3 @@
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 // typewriter https://codepen.io/hi-im-si/pen/DHoup
 var TxtType = function(el, toRotate, period) {
 this.toRotate = toRotate;
@@ -99,11 +80,11 @@ document.querySelector('.hello').scrollIntoView({
 // end of scroll code
 
 // Hamburger menu https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/
-// $(document).ready(function () {
+$(document).ready(function () {
 
-// $('.first-button').on('click', function () {
+$('.first-button').on('click', function () {
 
-// $('.animated-icon1').toggleClass('open');
-// });
-// });
+$('.animated-icon1').toggleClass('open');
+});
+});
 // end of hamburger code

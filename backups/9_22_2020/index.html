@@ -10,50 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	  
   <title>Connor Readnour Portfolio</title>
   </head>
-  <body>
+  <body class="background-image">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!--Start of About section -->
+  <div id="welcome-section"><!--background-image-laptop class for background image-->
   <!--Navbar-->
-  <nav class="navbar " style="position: fixed;  background-color:  rgb(27, 27, 27); border-radius: 5px; margin: 5px;">
-  <!-- Navbar brand -->
-  <!--<a class="navbar-brand">Nav Menu</a> -->
-    <!-- Collapse button -->
-  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="animated-icon1" >
-      <span></span>
-      <span></span>
-      <span></span>
+  <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
+  <div class="dropdown" style="text-align: left; margin-top: 5px; margin-left: 5px;">
+    <button class="dropbtn">
+      <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-content" style="font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 5px;">
+      <!-- <a href="#welcome-section">Home</a> -->
+      <a href="#about" style="text-decoration: none;">About</a>
+      <a href="#projects" style="text-decoration: none;">Web&nbsp;Development</a>
+      <a href="#personal-projects" style="text-decoration: none;">Personal&nbsp;Projects</a>
+      <a href="#autocad" style="text-decoration: none;">CAD&nbsp;|&nbsp;Revit&nbsp;|&nbsp;Other&nbsp;Gallery</a>
+      <a href="#contact" style="text-decoration: none;">Contact&nbsp;Info</a>
     </div>
-  </button>
-  <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="navbarContent">
-    <!--Nav Menu Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#welcome-section">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Web Development</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#personal-projects">Personal Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#autocad">AutoCAD | Revit | Other</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact Info</a>
-      </li>
-    </ul>
-    <!-- end Links -->
   </div>
-  <!-- end Collapsible content -->
-</nav>
-<!--/. end Navbar-->
-<!--Start of About section -->
-<div id="welcome-section" class="wrapper background-image-laptop"><!--background-image-laptop class for background image-->
+  <!--/. end Navbar-->
   <br>
   <br>
   <br>
@@ -84,9 +60,9 @@
         </div>
       </div> 
     </div>
-  <div class="wrapper site-background ">
+  <div id="about" class="wrapper site-background">
     <!--About start-->
-    <h1 id="about">About</h1>
+    <h1 >About</h1>
     <div class="text-area-div">
       <i  class="fa fa-bar-chart iAbout" aria-hidden="true" aria-hidden="true"></i>&nbsp; <!--https://fontawesome.com/v4.7.0/icon/-->
       <h4 class="text-area" style="color:white; margin-left: 15px; margin-right: 5px;">
@@ -114,10 +90,11 @@
     <br /><br /><br />
     <!--start of web development section-->
     <h1 id="projects">Web Development Gallery</h1>
+      <div class="center site-background">
       <div class="img-area">
         <!--Bootstrap development teamspace-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/teamSpaceScenario.PNG" style="height:150px;">
+          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/teamSpaceScenario.PNG" style="height:150px;">
             <a href="img/teamSpaceScenario.PNG" target="_blank" >
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -131,11 +108,11 @@
                 </span>
               </p>
             </a>
-          <p style="color:black;">Bootstrap development, creating a data table, room picker & side nav.</p>
+          <p style="color:black;">Bootstrap development</p>
         </div>
         <!--Bootstrap development equipment-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/sv1.PNG" style="height:150px;">
+          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv1.PNG" style="height:150px;">
             <a href="img/sv1.PNG" target="_blank" >
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -149,11 +126,11 @@
                 </span>
               </p>
             </a>
-          <p style="color:black;">Bootstrap development, creating a data table, room picker & side nav.</p>
+          <p style="color:black;">Bootstrap development</p>
         </div>
         <!--Bootstrap development census-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/sv2.PNG" style="height:150px;">
+          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv2.PNG" style="height:150px;">
             <a href="img/sv2.PNG" target="_blank" >
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -167,11 +144,11 @@
                 </span>
               </p>
             </a>
-          <p style="color:black;">Bootstrap development, room picker with side nav.</p>
+          <p style="color:black;">Bootstrap development</p>
         </div>
         <!--Bootstrap upgrade of legacy site team space-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/teamSpaceUpgrade.png" style="height:150px;">
+          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/teamSpaceUpgrade.png" style="height:150px;">
             <a href="img/teamSpaceUpgrade.png" target="_blank">
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -185,11 +162,11 @@
                 </span>
               </p>
             </a>
-            <p style="color:black;">Bootstrap upgrade of legacy site, modernizing the layout.</p>
+            <p style="color:black;">Bootstrap upgrade of legacy site.</p>
         </div>
         <!--Bootstrap upgrade of legacy site census-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/sv5/room.png" style="height:150px;">
+          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv5/room.png" style="height:150px;">
             <a href="img/sv5/room.png" target="_blank">
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -203,11 +180,11 @@
                 </span>
               </p>
             </a>
-          <p style="color:black;">Bootstrap upgrade of legacy site, modernizing the layout.</p>
+          <p style="color:black;">Bootstrap upgrade of legacy site.</p>
         </div>  
         <!--Bootstrap upgrade of legacy site census-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail example-img-size single-img" src="img/sv5/buildings.png" style="height:150px; width: 260px;">
+          <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv5/buildings.png" style="height:150px; width: 260px;">
             <a href="img/sv5/buildings.png" target="_blank">
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -221,11 +198,11 @@
                 </span>
               </p>
             </a>
-          <p style="color:black;">Bootstrap upgrade of legacy site, modernizing the layout.</p>
+          <p style="color:black;">Bootstrap upgrade of legacy site.</p>
         </div>
         <!--Portfolio Enhancements-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Portfolio Upgrade" class="project-image img-thumbnail example-img-size single-img" src="img/portfolioUpgrade.PNG" style="height:150px;" >
+          <img alt="Portfolio Upgrade" class="project-image img-thumbnail single-img" src="img/portfolioUpgrade.PNG" style="height:150px;" >
             <a href="img/portfolioUpgrade.PNG" target="_blank">
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -243,7 +220,7 @@
         </div>
         <!--Portfolio enhancement-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Portfolio Upgrade" class="project-image img-thumbnail example-img-size single-img" src="img/portfolioUpgrade2.PNG" style="height:150px;">
+          <img alt="Portfolio Upgrade" class="project-image img-thumbnail single-img" src="img/portfolioUpgrade2.PNG" style="height:150px;">
             <a href="img/portfolioUpgrade2.PNG" target="_blank">
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -261,7 +238,7 @@
         </div>
         <!--Portfolio enhancement-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Portfolio Upgrade" class="project-image img-thumbnail example-img-size single-img" src="img/portfolioUpgrade3.PNG" style="height:150px;">
+          <img alt="Portfolio Upgrade" class="project-image img-thumbnail single-img" src="img/portfolioUpgrade3.PNG" style="height:150px;">
             <a href="img/portfolioUpgrade3.PNG" target="_blank">
               <p class="card-btn">
                 <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -279,7 +256,7 @@
         </div>
         <!--Portfolio enhancement-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Portfolio Upgrade" class="project-image img-thumbnail example-img-size single-img" src="img/portfolioUpgrade4.PNG" style="height:150px;">
+          <img alt="Portfolio Upgrade" class="project-image img-thumbnail single-img" src="img/portfolioUpgrade4.PNG" style="height:150px;">
           <a href="img/portfolioUpgrade4.PNG" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -296,6 +273,7 @@
           <p style="color:black;">Enhancing my portfolio around 9/20/2020.</p>
         </div>
       </div>
+    </div>
     <br /><br /><br />
     <!--End of web Development work -->
     <!--Start of personal Projects -->
@@ -307,7 +285,7 @@
       <div class="img-area">
         <!--Bootstrap CheatSheet-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/bootstrapCheatsheet.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/bootstrapCheatsheet.PNG" style="height:150px; width: 260px;">
           <a href="bootstrap_cheatsheet/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -325,7 +303,7 @@
         </div>
         <!--HTML5 CheatSheet-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/htmlCheatSheet.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/htmlCheatSheet.PNG" style="height:150px; width: 260px;">
           <a href="htmlcheatsheet/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -343,7 +321,7 @@
         </div>
         <!--CSS3 CheatSheet-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/cssCheatSheet.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/cssCheatSheet.PNG" style="height:150px; width: 260px;">
           <a href="csscheatsheet/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -361,7 +339,7 @@
         </div>
         <!--Animated Login Form-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/loginForm.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/loginForm.PNG" style="height:150px; width: 260px;">
           <a href="animatedLoginForm/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -379,7 +357,7 @@
         </div>
         <!--example Website-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/exWebsite.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/exWebsite.PNG" style="height:150px; width: 260px;">
           <a href="mywebsite/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -397,7 +375,7 @@
         </div>
         <!--FlexBox-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/flexBox.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/flexBox.PNG" style="height:150px; width: 260px;">
           <a href="imageGallery/index.html" target="_blank" >
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -415,7 +393,7 @@
         </div>
         <!--JavaScript DOM-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/jsDom.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/jsDom.PNG" style="height:150px; width: 260px;">
           <a href="JavaScriptPractice/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -433,7 +411,7 @@
         </div>
         <!--Rock Paper Scissors-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/rps.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/rps.PNG" style="height:150px; width: 260px;">
           <a href="rock-paper-scissors/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -451,7 +429,7 @@
         </div>
         <!--Bootstrap CheatSheet-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/pillar.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/pillar.PNG" style="height:150px; width: 260px;">
           <a href="snake/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -469,7 +447,7 @@
         </div>
         <!--Less tutorial-->
         <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-          <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/less.PNG" style="height:150px; width: 260px;">
+          <img alt="Polyline example 1" class="project-image img-thumbnail single-img" src="img/less.PNG" style="height:150px; width: 260px;">
           <a href="lessSandbox/index.html" target="_blank">
             <p class="card-btn">
               <span class="btn btn-success btn-sm zoomSmall">Visit</span>
@@ -495,7 +473,7 @@
         <div class="img-area">
           <!--Autocad 25k with cleanup-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Polyline example 1" class="project-image img-thumbnail example-img-size single-img" src="img/plines.PNG" style="height:150px;">
+            <img alt="Polyline example 1" class="project-image img-thumbnail  single-img" src="img/plines.PNG" style="height:150px;">
               <a href="img/plines.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -505,7 +483,7 @@
           </div>
           <!--Autocad 25k with cleanup-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Polyline example 2" class="project-image img-thumbnail example-img-size single-img" src="img/plines2.PNG" style="height:150px;">
+            <img alt="Polyline example 2" class="project-image img-thumbnail  single-img" src="img/plines2.PNG" style="height:150px;">
               <a href="img/plines2.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -515,7 +493,7 @@
           </div>
           <!--Autocad 25k with cleanup-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Polyline example 2" class="project-image img-thumbnail example-img-size single-img" src="img/plines3.PNG" style="height:150px;">
+            <img alt="Polyline example 2" class="project-image img-thumbnail  single-img" src="img/plines3.PNG" style="height:150px;">
               <a href="img/plines3.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -525,7 +503,7 @@
           </div>
           <!--Autocad 25k with category-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="cad 1" class="project-image img-thumbnail example-img-size single-img" src="img/cad/25k_with_category.PNG" style="height:150px;">
+            <img alt="cad 1" class="project-image img-thumbnail  single-img" src="img/cad/25k_with_category.PNG" style="height:150px;">
               <a href="img/cad/25k_with_category.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -535,7 +513,7 @@
           </div>
           <!--Autocad 25k with category-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="cad 2" class="project-image img-thumbnail example-img-size single-img" src="img/cad/25k_with_category2.PNG" style="height:150px;">
+            <img alt="cad 2" class="project-image img-thumbnail  single-img" src="img/cad/25k_with_category2.PNG" style="height:150px;">
               <a href="img/cad/25k_with_category2.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -545,7 +523,7 @@
           </div>
           <!--Autocad 25k with category-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="cad 3" class="project-image img-thumbnail example-img-size single-img" src="img/cad/25k_with_category3.PNG" style="height:150px; width: 250px;">
+            <img alt="cad 3" class="project-image img-thumbnail  single-img" src="img/cad/25k_with_category3.PNG" style="height:150px; width: 250px;">
               <a href="img/cad/25k_with_category3.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -555,7 +533,7 @@
           </div>
           <!--revit home model 1-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Sample Revit model home" class="project-image img-thumbnail example-img-size single-img" src="img/cad/apt_lvl_01_3d.PNG" style="height:150px;  width: 260px;">
+            <img alt="Sample Revit model home" class="project-image img-thumbnail  single-img" src="img/cad/apt_lvl_01_3d.PNG" style="height:150px;  width: 260px;">
               <a href="img/cad/apt_lvl_01_3d.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -565,7 +543,7 @@
           </div>
           <!--revit home model 2-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Sample Revit model home" class="project-image img-thumbnail example-img-size single-img" src="img/getting_started_01.PNG" style="height:150px;">
+            <img alt="Sample Revit model home" class="project-image img-thumbnail  single-img" src="img/getting_started_01.PNG" style="height:150px;">
               <a href="img/getting_started_01.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -574,7 +552,7 @@
             <p style="color:black;">Revit example home model.</p>
           </div>
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Excel Direct Connect Report" class="project-image img-thumbnail example-img-size single-img" src="img/exceldc.PNG" style="height:150px;">
+            <img alt="Excel Direct Connect Report" class="project-image img-thumbnail  single-img" src="img/exceldc.PNG" style="height:150px;">
               <a href="img/exceldc.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -584,7 +562,7 @@
           </div>
           <!--aquarium slide-->
           <div class="single-img zoomSmall" style="background-color:#f8f8ff; border-radius: 25px; margin-top: 30px; height: 260px; width: 320px; border-style: solid;border-color: lightskyblue; border-width: thick; box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);">
-            <img alt="Aquarium" class="project-image img-thumbnail example-img-size single-img" src="img/aq.PNG" style="height:150px;">
+            <img alt="Aquarium" class="project-image img-thumbnail  single-img" src="img/aq.PNG" style="height:150px;">
               <a href="img/aq.PNG" target="_blank">
                 <p class="card-btn">
                   <span class="btn btn-success btn-sm zoomSmall">View</span>
@@ -595,7 +573,8 @@
         </div>       
         <br /><br /><br />          
       </div>
-    <div id="contact" class="contact-section wrapper background-image-laptop" >
+      
+    <div id="contact" class="contact-section wrapper background-image">
       <div>
         <h2>
             Let's work together!
@@ -616,7 +595,7 @@
         </a>
       </div>
     </div>
-    <footer style="text-align:center;">
+    <footer style="text-align:center; width: 100%;">
       <p>
         © Created by Connor Readnour, with lots of <i class="fa fa-heart-o" aria-hidden="true"> and </i> <i class="fa fa-coffee"></i>
       </p>
