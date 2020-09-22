@@ -32,17 +32,11 @@ scroll-behavior: smooth;
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.4;
   animation: fadeInAnimation ease 2s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
-}
-section {
-  width: 100%;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
 }
 /* scrollbar stuff */
 /* width */
@@ -74,12 +68,12 @@ text-decoration: none;
 a:hover {
 color: white;
 background-color: transparent;
-text-decoration: underline;
+text-decoration: none;
 }
 a:active {
 color: white;
 background-color: transparent;
-text-decoration: underline;
+text-decoration: none;
 }
 ul {
   list-style: none;
