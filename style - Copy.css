@@ -120,6 +120,17 @@ footer {
 .siteFont {
   color: grey;
 }
+/* .card {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+  background-color:#f8f8ff; 
+  border-radius: 25px; 
+  margin-top: 30px; 
+  height: 260px; 
+  width: 320px; 
+  border-style: solid;
+  border-color: lightskyblue; 
+  border-width: thick;
+} */
 /* start of navbar stuff https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
 /* Icon 1 */
 .animated-icon1 {
