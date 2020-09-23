@@ -228,7 +228,7 @@ text-align: center;
 .zoomSmall:hover {
   box-shadow: 0 0 11px #f8f8ff; 
 }
-/*start of zoom code */
+*start of zoom code */
 .zoomSmall {
   padding: 10px;
   margin: 0 auto;
