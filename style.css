@@ -118,8 +118,6 @@ footer {
 .dropbtn {
   background-color:  rgb(27, 27, 27); 
   color: #f8f8ff;
-  margin-top: 5px;
-  margin-left: 5px;
   font-size: 32px;
   border: none;
 }
@@ -134,6 +132,8 @@ footer {
   display: inline-block;
   align-content: left;
   text-align: left;
+  top: 20px;
+  left: 20px;
 }
 .dropdown-content {
   display: none;
@@ -249,7 +249,7 @@ transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will g
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  left: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
