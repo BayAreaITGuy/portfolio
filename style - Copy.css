@@ -233,6 +233,10 @@ text-align: center;
   padding: 10px;
   margin: 0 auto;
 }
+.contactIcon {
+  padding: 10px;
+  margin: 0 auto;
+}
 .zoom {
   padding: 10px;
   transition: transform .2s; /* Animation */
