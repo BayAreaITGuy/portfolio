@@ -228,11 +228,11 @@ text-align: center;
 /*start of zoom code */
 .zoomSmall {
   padding: 10px;
-  transition: transform .2s; /* Animation */
+  /* transition: transform .2s;  */
   margin: 0 auto;
 }
 .zoomSmall:hover {
-  transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* transform: scale(1.10);  */
 }
 .zoom {
   padding: 10px;
