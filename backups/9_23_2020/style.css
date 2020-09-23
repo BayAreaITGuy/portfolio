@@ -84,7 +84,7 @@ ul li a {
 }
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
-  color: rgb(211, 207, 207);
+  color: #f8f8ff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   word-wrap: break-word;
 }
@@ -94,7 +94,7 @@ h1 {
 }
 li {
   text-align: left;
-  color: rgb(211, 207, 207);
+  color: #f8f8ff;
 }
 footer {
   /* font-weight: 300; */
