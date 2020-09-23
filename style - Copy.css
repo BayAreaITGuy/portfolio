@@ -23,12 +23,6 @@
 html {
 scroll-behavior: smooth;
 }
-:root {
-  --main-white: #f0f0f0;
-  --main-red: #c41532;
-  --main-blue: #45567d;
-  --main-gray: #303841;
-}
 body {
   font-size: 1.8rem;
   font-weight: 200;

@@ -98,12 +98,3 @@ document.querySelector('.hello').scrollIntoView({
 });
 // end of scroll code
 
-// Hamburger menu https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/
-// $(document).ready(function () {
-
-// $('.first-button').on('click', function () {
-
-// $('.animated-icon1').toggleClass('open');
-// });
-// });
-// end of hamburger code
