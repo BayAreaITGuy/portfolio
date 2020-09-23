@@ -225,14 +225,17 @@ text-align: center;
   height: 80vh;
   /* padding: 0 2rem; */
 }
-/*start of zoom code */
+.zoomSmall:hover {
+  box-shadow: 0 0 11px #f8f8ff; 
+}
+*start of zoom code */
 .zoomSmall {
   padding: 10px;
-  /* transition: transform .2s;  */
   margin: 0 auto;
 }
-.zoomSmall:hover {
-  /* transform: scale(1.10);  */
+.contactIcon {
+  padding: 10px;
+  margin: 0 auto;
 }
 .zoom {
   padding: 10px;
