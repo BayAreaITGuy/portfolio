@@ -12,13 +12,13 @@
   } 
 } 
 @-webkit-keyframes zoom {
-from {-webkit-transform:scale(0)}
-to {-webkit-transform:scale(1)}
-}
-@keyframes zoom {
-from {transform:scale(0)}
-to {transform:scale(1)}
-}
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+  }
+  @keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+  }
 /* end body and key frames animation */
 html {
 scroll-behavior: smooth;
@@ -41,39 +41,39 @@ body {
 /* scrollbar stuff */
 /* width */
 ::-webkit-scrollbar {
-width: 10px;
+  width: 10px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-background: #f1f1f1;
+  background: #f1f1f1;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #888;
+  background: #888;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #555;
+  background: #555;
 }
 /* end scrollbar stuff */
 a:link {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 a:visited {
-color: white;
-background-color: transparent;
-text-decoration: none;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 a:hover {
-color: white;
-background-color: transparent;
-text-decoration: none;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 a:active {
-color: white;
-background-color: transparent;
-text-decoration: none;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -83,18 +83,18 @@ ul li a {
   display: inline-block;
 }
 h1, h2, h3, h4, h5, h6, p {
-text-align: center;
-color: rgb(211, 207, 207);
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-word-wrap: break-word;
+  text-align: center;
+  color: rgb(211, 207, 207);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  word-wrap: break-word;
 }
 h1 {
   padding-top:5vh; 
   padding-bottom:5vh;
 }
 li {
-text-align: left;
-color: rgb(211, 207, 207);
+  text-align: left;
+  color: rgb(211, 207, 207);
 }
 footer {
   /* font-weight: 300; */
@@ -116,9 +116,9 @@ footer {
 }
 /*new nav */
 .dropbtn {
-  background-color:  rgb(27, 27, 27); 
+  background-color: transparent;
   color: #f8f8ff;
-  font-size: 32px;
+  font-size: 2em;
   border: none;
 }
 .dropdiv {
@@ -132,8 +132,8 @@ footer {
   display: inline-block;
   align-content: left;
   text-align: left;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
 }
 .dropdown-content {
   display: none;
@@ -168,7 +168,6 @@ footer {
   padding: 1rem 2rem;
   margin: 20px;
 }
-/* start card stuff */
 .wrapper {
 text-align: center;
 }
@@ -177,14 +176,14 @@ text-align: center;
   padding-right: 30px;
 }
 .img-area {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .single-img{
-padding:0 20px 20px;
+  padding:0 20px 20px;
 }
 .text-area {
   display: inline-flex;
@@ -228,12 +227,12 @@ padding:0 20px 20px;
 }
 /*start of zoom code */
 .zoomSmall {
-padding: 10px;
-transition: transform .2s; /* Animation */
-margin: 0 auto;
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
 }
 .zoomSmall:hover {
-transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.10); /* (20% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .zoom {
   padding: 10px;
