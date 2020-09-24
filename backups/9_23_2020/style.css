@@ -2,24 +2,6 @@
   margin: 0;
   padding: 0;
 }
-/* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-  } 
-} 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
-  }
-  @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-  }
-/* end body and key frames animation */
 html {
 scroll-behavior: smooth;
 }
@@ -259,3 +241,21 @@ text-align: center;
 #myBtn:hover {
   background-color: #555;
 }
+/* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+  }
+  @keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+  }
+/* end body and key frames animation */

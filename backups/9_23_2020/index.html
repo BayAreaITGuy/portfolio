@@ -12,7 +12,6 @@
   </head>
   <body class="background-image">
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <!--Start of About section -->
   <div id="welcome-section"><!--background-image-laptop class for background image-->
   <!--Navbar-->
   <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
@@ -21,6 +20,7 @@
       <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
     </button>
     <div class="dropdown-content" style="font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 5px;">
+      <a href="#welcome-section" style="text-decoration: none;">Home</a>
       <a href="#about" style="text-decoration: none;">About Section</a>
       <a href="#personal-projects" style="text-decoration: none;">Projects</a>
       <a href="#projects" style="text-decoration: none;">Web&nbsp;Development</a>
@@ -30,15 +30,15 @@
   </div>
   <!--/. end Navbar-->
   <br /><br /><br />
-    <h1 id="about">
+    <h1>
       Connor Readnour
     </h1>
       <div class="center"> <!--- add class="zoom" to get zoom effect-->
         <img src="img/me.jpg" id="me" class="img-fluid img-thumbnail" alt="me!" style="width:100%; height:auto; max-width: 250px;">
       </div>
-    <br>
+    <br /><br />
     <!--Typerwriter start https://codepen.io/hi-im-si/pen/DHoup-->
-    <h4> 
+    <h4  id="about"> 
       <a href="" class="typewrite" style="text-decoration: none; color:#f8f8ff; margin-left: 15px; margin-right: 15px;"" data-period="2000" data-type='[ "Front-End Web Development | IWMS | CAD | Data Analysis & Testing"]'></a>
         <span class="wrap"></span>
     </h4>
@@ -71,7 +71,7 @@
       <div class="text-area-div wrapper">
         <i class="fa fa-spinner fa-spin fa-fw iAbout"></i>&nbsp;
         <h4 class="text-area"style="color:#f8f8ff; margin-left: 15px; margin-right: 5px;">
-          Currently working towards earning the JavaScript Algorithms and Data Structures Certification from freeCodeCamp.
+          Currently teaching myself React and working on the JavaScript Algorithms and Data Structures Certification from freeCodeCamp.
         </h4>  
       </div>
       <!--About end-->
