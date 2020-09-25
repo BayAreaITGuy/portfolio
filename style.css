@@ -94,7 +94,7 @@ footer {
 .dropbtn {
   background-color: transparent;
   color: #f8f8ff;
-  font-size: 2em;
+  font-size: 1em;
   border: none;
 }
 .dropdiv {
@@ -104,11 +104,17 @@ footer {
   margin: 3px 0;
 }
 .dropdown {
-  top: 0;
   display: inline-block;
   align-content: left;
   text-align: left;
   top: 10px;
+  left: 10px;
+}
+.backtotop {
+  display: inline-block;
+  align-content: left;
+  text-align: left;
+  bottom: 10px;
   left: 10px;
 }
 .dropdown-content {
@@ -181,7 +187,9 @@ text-align: center;
   align-items: center;
 }
 .background-image {
-  background: black;
+  background:#000f10;
+    /* dark teal hex: #000f10 , 000808
+    /* linear gradient image causing issues*/
     /* linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
@@ -223,22 +231,21 @@ text-align: center;
 }
 /* end zoom code */
 /* back to top button  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
-#myBtn {
+.myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 10px;
   z-index: 99;
-  font-size: 18px;
   border: none;
   outline: none;
   background-color:  rgb(19, 20, 20);;
   color: white;
   cursor: pointer;
-  padding: 12px;
+  padding: 5px;
   border-radius: 4px;
 }
-#myBtn:hover {
+.myBtn:hover {
   background-color: #555;
 }
 /* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
