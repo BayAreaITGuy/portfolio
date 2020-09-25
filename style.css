@@ -181,12 +181,12 @@ text-align: center;
   align-items: center;
 }
 .background-image {
-  background: 
-    linear-gradient(
+  background: black;
+    /* linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-  url('img/welcomeBackground.PNG') no-repeat center center fixed; 
+  url('img/welcomeBackground.PNG') no-repeat center center fixed;  */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
