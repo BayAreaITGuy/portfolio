@@ -78,7 +78,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: rgb(33, 36, 35);
-  border-top: 4px solid lightblue;
+  border-top: 4px solid rgb(80, 151, 145);
 }
 .iAbout {
   color:white; 
@@ -108,14 +108,14 @@ footer {
   align-content: left;
   text-align: left;
   top: 10px;
-  left: 10px;
+  left: 5px;
 }
 .backtotop {
   display: inline-block;
   align-content: left;
   text-align: left;
   bottom: 10px;
-  left: 10px;
+  left: 5px;
 }
 .dropdown-content {
   display: none;
@@ -242,7 +242,7 @@ text-align: center;
   background-color:  rgb(19, 20, 20);;
   color: white;
   cursor: pointer;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 4px;
 }
 .myBtn:hover {
