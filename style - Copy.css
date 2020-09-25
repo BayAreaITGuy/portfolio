@@ -78,7 +78,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: rgb(33, 36, 35);
-  border-top: 4px solid lightblue;
+  border-top: 4px solid rgb(80, 151, 145);
 }
 .iAbout {
   color:white; 
