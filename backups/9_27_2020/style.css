@@ -200,10 +200,13 @@ text-align: center;
   height: 80vh;
   /* padding: 0 2rem; */
 }
-.zoomSmall:hover {
+#me {
   box-shadow: 0 0 11px #f8f8ff; 
 }
 /*start of zoom code */
+.zoomSmall:hover {
+  box-shadow: 0 0 11px #f8f8ff; 
+}
 .zoomSmall {
   padding: 10px;
   margin: 10px 10px 10px 10px;
