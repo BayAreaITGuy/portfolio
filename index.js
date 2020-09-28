@@ -97,4 +97,3 @@ document.querySelector('.hello').scrollIntoView({
     behavior: 'smooth' 
 });
 // end of scroll code
-
