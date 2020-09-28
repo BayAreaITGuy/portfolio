@@ -12,7 +12,7 @@
   </head>
   <body class="background-image">
   <!--back to top button-->
-  <button onclick="topFunction()" id="myBtn" class="backtotop myBtn" style="background: transparent;" title="Go to top">
+  <button onclick="topFunction()" id="myBtn" class="backtotop myBtn" style="background: transparent;" data-toggle="tooltip" data-placement="top" title="Go to top">
     <i class="fa fa-caret-square-o-up fa-2x" aria-hidden="true"></i>
   </button>
   <div id="welcome-section"><!--background-image-laptop class for background image-->
@@ -20,7 +20,7 @@
   <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
   <div class="dropdown" style="text-align: left; margin-top: 5px; margin-left: 5px; position: fixed;">
     <button class="dropbtn" style="background: transparent;">
-      <i class="fa fa-caret-square-o-down fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-caret-square-o-down fa-2x" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Nav Menu"></i>
     </button>
     <div class="dropdown-content" style="font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 5px;">
       <a href="#welcome-section" style="text-decoration: none;">Home</a>
@@ -83,12 +83,12 @@
         <!-- flex  box resume -->
         <div class="single-img">
           <img alt="Resume" class="img-fluid img-thumbnail zoomSmall" src="img/resume/resume.PNG" style="width:100%; height:auto; max-width: 600px; ">
-          <p> <a href="workFiles/Connor_Readnour_Resume_Port.pdf" target="_blank" style="text-decoration: none;">Click for PDF</a></p>
+          <p> <a href="workFiles/Connor_Readnour_Resume_Port.pdf" target="_blank" style="text-decoration: none;">Click for pdf view</a></p>
         </div>
         <!-- cert -->
         <div class="single-img">
           <img alt="responsive-web-design-cert" class="img-fluid img-thumbnail zoomSmall" src="img/responsiveWebDesignCert.jpg" style="width:100%; height:auto; max-width: 820px; ">
-          <p><a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" style="text-decoration: none;">Click to verify</a></p>
+          <p><a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" style="text-decoration: none;">Click to verify certification</a></p>
         </div>
       </div> 
     </div>
@@ -603,16 +603,19 @@
       </div>
       <div>
         <a class="btn contactIcon" href="https://github.com/BayAreaITGuy/portfolio" target="_blank">
-          <i style="font-size:2.5em;" class="fa fa-github" aria-hidden="true"></i>
+          <i style="font-size:2.5em;" class="fa fa-github" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="Github"></i>
+        </a>
+        <a class="btn contactIcon" href="https://www.freecodecamp.org/masterchief1021" target="_blank">
+          <i style="font-size:2.5em;" class="fa fa-free-code-camp" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="freeCodeCamp profile"></i>
         </a>
         <a class="btn contactIcon" href="https://www.linkedin.com/in/connorreadnour/" target="_blank">    
-          <i style="font-size:2.5em;" class="fa fa-linkedin" aria-hidden="true"></i>
+          <i style="font-size:2.5em;" class="fa fa-linkedin" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="LinkedIn profile"></i>
         </a>
         <a class="btn contactIcon" href="mailto:connorreadnour@gmail.com">
-            <i style="font-size:2.5em;" class="fa fa-envelope-open-o" aria-hidden="true"></i>
+            <i style="font-size:2.5em;" class="fa fa-envelope-open-o" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="Email"></i>
         </a>
         <a class="btn contactIcon" href="tel:630-639-6677">
-            <i style="font-size:2.5em;" class="fa fa-mobile" aria-hidden="true"></i>
+            <i style="font-size:2.5em;" class="fa fa-mobile" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="Phone"></i>
         </a>
       </div>
     </div>
@@ -625,5 +628,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="index.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
   </body>
 </html>
