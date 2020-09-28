@@ -25,7 +25,7 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #013135;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -84,9 +84,6 @@ footer {
   color:white; 
   margin-left: 5px;
 }
-/* .site-background{
-  background-color: rgb(34, 41, 39);
-} */
 .siteFont {
   color: grey;
 }
@@ -120,7 +117,7 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(27, 27, 27); 
+  background-color: #013135; 
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -131,6 +128,7 @@ footer {
   display: block;
   color: #f8f8ff;
   text-decoration: none;
+  border-radius: 5px;
 }
 .dropdown-content a:hover {
   background-color: rgb(27, 27, 27);
@@ -188,13 +186,6 @@ text-align: center;
 }
 .background-image {
   background:#000f10;
-    /* dark teal hex: #000f10 , 000808
-    /* linear gradient image causing issues*/
-    /* linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-  url('img/welcomeBackground.PNG') no-repeat center center fixed;  */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
