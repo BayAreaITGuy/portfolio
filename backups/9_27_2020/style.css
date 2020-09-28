@@ -29,7 +29,7 @@ body {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(33, 36, 35);
 }
 /* end scrollbar stuff */
 a:link {
@@ -76,7 +76,7 @@ footer {
   /* font-weight: 300; */
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1.75rem;
   background: rgb(33, 36, 35);
   border-top: 4px solid rgb(80, 151, 145);
 }
