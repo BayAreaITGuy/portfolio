@@ -54,10 +54,6 @@ a:active {
 ul {
   list-style: none;
 }
-ul li a {
-  margin-left:12px; 
-  display: inline-block;
-}
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   color: #f8f8ff;
@@ -170,7 +166,7 @@ text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   max-width: 800px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -201,11 +197,11 @@ text-align: center;
   /* padding: 0 2rem; */
 }
 #me {
-  box-shadow: 0 0 11px #f8f8ff; 
+  box-shadow: 0 0 5px #f8f8ff; 
 }
 /*start of zoom code */
 .cards:hover {
-  box-shadow: 0 0 11px #f8f8ff; 
+  box-shadow: 0 0 10px #f8f8ff; 
 }
 .cards {
   padding: 10px;
