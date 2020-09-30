@@ -78,6 +78,9 @@ footer {
   background: rgb(33, 36, 35);
   border-top: 4px solid rgb(80, 151, 145);
 }
+#me {
+  box-shadow: 0 0 5px #f8f8ff; 
+}
 .iAbout {
   color:white; 
   margin-left: 5px;
@@ -197,9 +200,6 @@ text-align: center;
   text-align: center;
   height: 80vh;
   /* padding: 0 2rem; */
-}
-#me {
-  box-shadow: 0 0 5px #f8f8ff; 
 }
 /*start of zoom code */
 .cards:hover {

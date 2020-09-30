@@ -43,17 +43,19 @@ this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 var that = this;
 var delta = 85 - Math.random() * 100; // higher delta = slower typing
 
-// uncomment to start looping text
-// if (this.isDeleting) { delta /= 3; } // higher delta = quicker deletion
+/*uncomment to start looping text
+ 
+ if (this.isDeleting) { delta /= 3; } // higher delta = quicker deletion
 
-// if (!this.isDeleting && this.txt === fullTxt) {
-// delta = this.period;
-// this.isDeleting = true;
-// } else if (this.isDeleting && this.txt === '') {
-// this.isDeleting = false;
-// this.loopNum++;
-// delta = 500;
-// }
+ if (!this.isDeleting && this.txt === fullTxt) {
+ delta = this.period;
+ this.isDeleting = true;
+ } else if (this.isDeleting && this.txt === '') {
+ this.isDeleting = false;
+ this.loopNum++;
+ delta = 500;
+ }
+*/
 
 setTimeout(function() {
 that.tick();
