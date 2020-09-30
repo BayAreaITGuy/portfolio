@@ -268,10 +268,22 @@ text-align: center;
   margin-right: 30px;
 }
 .typewrite {
-  text-decoration: none; 
+  /* text-decoration: none;  only works inline for some reason*/
   color:#f8f8ff; 
   margin-left: 30px; 
   margin-right: 30px;
+}
+.button-2 {
+  color: #FE4880;
+  border: 3px solid #FE4880;
+  background-image: linear-gradient(to right, transparent 50%, #FE4880 50%);
+  background-size: 200%;
+  background-position: 0%;
+}
+
+.button-2:hover {
+  color: #FFF;
+  background-position: 100%;
 }
 /* .card-img-size {
   height:150px; 
