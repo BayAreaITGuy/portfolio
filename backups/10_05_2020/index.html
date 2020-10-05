@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	  
+  <title>Connor Readnour Portfolio</title>
+  </head>
+  <body class="background-image">
+  <!--back to top button-->
+  <button onclick="topFunction()" id="myBtn" class="backtotop myBtn" style="background: transparent;" data-toggle="tooltip">
+    <i class="fa fa-chevron-circle-up fa-3x" aria-hidden="true" style="opacity: .6;"></i>
+  </button>
+  <section id="welcome-section">
+  <!--Navbar-->
+  <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
+  <nav class="dropdown" style="text-align: left; margin-top: 5px; margin-left: 5px; position: fixed;">
+    <button class="dropbtn" style="background: transparent;">
+      <i class="fa fa-caret-square-o-down fa-3x opacity-6" aria-hidden="true" data-toggle="tooltip"></i>
+    </button>
+    <nav class="dropdown-content" style="font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 5px;">
+      <a href="#welcome-section" style="text-decoration: none;">Home</a>
+      <a href="#about" style="text-decoration: none;">About Section</a>
+      <a href="#personal-projects" style="text-decoration: none;">Projects</a>
+      <a href="#projects" style="text-decoration: none;">Web&nbsp;Development</a>
+      <a href="#autocad" style="text-decoration: none;">CAD&nbsp;|&nbsp;Revit&nbsp;|&nbsp;Other</a>
+      <a href="#contact" style="text-decoration: none;">Contact&nbsp;Info</a>
+    </nav>
+  </nav>
+  <!--/. end Navbar-->
+  <br /><br /><br />
+    <h1>
+      Connor Readnour
+    </h1>
+      <div class="center"> <!--- add class="zoom" to get zoom effect-->
+        <img src="img/me.jpg" id="me" class="img-fluid img-thumbnail" alt="me!">
+      </div>
+    <br /><br />
+    <!--Typerwriter start https://codepen.io/hi-im-si/pen/DHoup-->
+    <h4  id="about"> 
+      <p class="typewrite" style="text-decoration: none;" data-period="2000" data-type='[ "Front-End Web Development | CAD | IWMS | Data Analysis & Testing"]'></p>
+      <span class="wrap"></span>
+    </h4>
+      <!--About start-->
+      <!-- <h1 id="about" >About</h1> -->
+      <br /><br />
+      <div class="text-area-div wrapper">
+        <i  class="fa fa-bar-chart fa-lg iAbout" aria-hidden="true" aria-hidden="true"></i>&nbsp; <!--https://fontawesome.com/v4.7.0/icon/-->
+        <h4 class="text-area about-h4">
+          For the last 2 years I have worn many hats while working for Robert Stephen Consulting. 
+          Hired as an IWMS Administrator, I quickly transitioned to a CAD Technician / Specialist position within a few months.
+        </h4>  
+      </div>
+        <br />
+      <div class="text-area-div wrapper">
+        <i class="fa fa-html5 fa-lg  iAbout" aria-hidden="true"></i>&nbsp;
+        <h4 class="text-area about-h4">
+          Around 1 year on the job I grew into a front end web development role creating Bootstrap web pages with HTML5, CSS3, JavaScript & jQuery, and have really fallen in love with web design and development ever since.
+        </h4>  
+      </div>
+      <br />
+      <div class="text-area-div wrapper">
+        <i class="fa fa-pie-chart fa-lg  iAbout" aria-hidden="true"></i>&nbsp;
+        <h4 class="text-area about-h4">
+          I’ve been able to get my hands on technologies such as AutoCAD, Revit, ARCHIBUS, SpaceView, Jira, Crystal Reports and numerous others that I 
+          hadn't heard of prior to my experience here.
+        </h4>  
+      </div>
+      <br />
+      <div class="text-area-div wrapper">
+        <i class="fa fa-rocket fa-lg iAbout"></i>&nbsp;
+        <h4 class="text-area about-h4">
+          Currently I am working on the JavaScript Algorithms and Data Structures Certification from freeCodeCamp, as well as learning React.
+        </h4>  
+      </div>
+      <!--About end-->
+      <br /><br /><br />
+      <div class="img-area" style="text-align: center; padding-right: 20px;">
+        <!-- flex  box resume -->
+        <div class="single-img">
+          <img alt="Resume" class="img-fluid img-thumbnail cards" src="img/resume/resume.PNG" style="width:100%; height:auto; max-width: 900px;">
+          <p> <a href="workFiles/Connor_Readnour_Resume_Port.pdf" target="_blank" style="text-decoration: none;">Click for pdf view</a></p>
+        </div>
+        <!-- cert -->
+        <!-- <div class="single-img">
+          <img alt="responsive-web-design-cert" class="img-fluid img-thumbnail cards" src="img/responsiveWebDesignCert.jpg" style="width:100%; height:auto; max-width: 850px;">
+          <p><a href="https://www.freecodecamp.org/certification/masterchief1021/responsive-web-design" target="_blank" style="text-decoration: none;">Click to verify certification</a></p>
+        </div> -->
+      </div> 
+    </section>
+    <br /><br /><br />
+    <!--Start of personal Projects -->
+    <section class="center">
+      <h1 id="personal-projects" class="center">My Projects</h1>
+        <div class="img-area"><!--start of project cards-->          
+          <!--exmaple website-->
+          <div class="single-img cards project-cards">
+            <img alt="acme website example 1" class="project-image img-thumbnail single-img" src="img/acme.PNG" style="height:150px; width: 260px;">
+            <a href="acme/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/acme" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom ">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Example Website</p>
+          </div>
+          <!-- end example website-->
+          <!--example Website-->
+          <div class="single-img cards project-cards">
+            <img alt="Example Website" class="project-image img-thumbnail single-img" src="img/exWebsite.PNG"
+              style="height:150px; width: 260px;">
+            <a href="mywebsite/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/mywebsite" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Example Website</p>
+          </div>
+          <!-- end example website-->
+          <!--React-->
+          <div class="single-img cards project-cards">
+            <img alt="FlexBox" class="project-image img-thumbnail single-img" src="img/react.PNG"
+              style="height:150px; width: 260px;">
+            <a href="https://codepen.io/bayareaitguy/pen/qBZgpRP" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/todo-react/codePenVersion" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">React To-Do List</p>
+          </div>
+          <!-- end react-->
+          <!--Bootstrap CheatSheet-->
+          <div class="single-img cards project-cards">
+            <img alt="Bootstrap" class="project-image img-thumbnail single-img" src="img/bootstrapCheatsheet.PNG" style="height:150px; width: 260px;">
+            <a href="bootstrap_cheatsheet/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/bootstrap_cheatsheet" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Bootstrap CheatSheet</p>
+          </div>
+          <!-- end bootstrap cheatsheet-->
+          <!--CSS3 CheatSheet-->
+          <div class="single-img cards project-cards">
+            <img alt="CSS3" class="project-image img-thumbnail single-img" src="img/cssCheatSheet.PNG"
+              style="height:150px; width: 260px;">
+            <a href="csscheatsheet/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/bootstrap_cheatsheet" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">CSS3 CheatSheet</p>
+          </div>
+          <!-- end css3 cheatsheet-->
+          <!--FexBox-->
+          <div class="single-img cards project-cards">
+            <img alt="HTML5" class="project-image img-thumbnail single-img" src="img/flexBox.PNG" style="height:150px; width: 260px;">
+            <a href="imageGallery/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/imageGallery" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">CSS Flexbox Gallery</p>
+          </div>
+          <!--end flex box -->
+          <!--Animated Login Form-->
+          <div class="single-img cards project-cards">
+            <img alt="Login" class="project-image img-thumbnail single-img" src="img/loginForm.PNG" style="height:150px; width: 260px;">
+            <a href="animatedLoginForm/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/animatedLoginForm" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Animated Login Form</p>
+          </div>
+          <!-- end login form-->
+          <!--Rock Paper Scissors-->
+          <div class="single-img cards project-cards">
+            <img alt="rock paper scissors" class="project-image img-thumbnail single-img" src="img/rps.PNG" style="height:150px; width: 260px;">
+            <a href="rock-paper-scissors/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/rock-paper-scissors" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Rock Paper Scissors Game</p>
+          </div>
+          <!-- end rock paper scissors-->
+          <!--Bootstrap CheatSheet-->
+          <div class="single-img cards project-cards">
+            <img alt="snake game" class="project-image img-thumbnail single-img" src="img/pillar.PNG" style="height:150px; width: 260px;">
+            <a href="snake/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/snake" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Caterpillar Game</p>
+          </div>
+          <!-- end bootstrap cheatsheet-->
+          <!-- Less-->
+          <div class="single-img cards project-cards">
+            <img alt="less" class="project-image img-thumbnail single-img" src="img/less.PNG" style="height:150px; width: 240px;">
+            <a href="lessSandbox/index.html" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">Visit</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/lessSandbox" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">CSS Less project</p>
+          </div><!--end Less-->
+        </div> <!--end of .image-area div-->
+      <br /><br /><br />
+    </section>
+    <!--end of project cards section----------------------------------------------->
+    <!--start of web development section------------------------------------------------->
+    <section class="center">
+      <h1 id="projects">Web Development Gallery</h1>
+        <div class="img-area">
+          <!--Bootstrap development teamspace-->
+          <div class="single-img cards project-cards" >
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/teamSpaceScenario.PNG" style="height:150px;">
+              <a href="img/teamSpaceScenario.PNG" target="_blank" >
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/teamSpace" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Bootstrap development equipment-->
+          <div class="single-img cards project-cards">
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv1.PNG" style="height:150px;">
+              <a href="img/sv1.PNG" target="_blank" >
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/equipment" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Bootstrap development census-->
+          <div class="single-img cards project-cards" >
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv2.PNG" style="height:150px;">
+              <a href="img/sv2.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/census" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Bootstrap upgrade of legacy site team space-->
+          <div class="single-img cards project-cards">
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/teamSpaceUpgrade.png" style="height:150px;">
+              <a href="img/teamSpaceUpgrade.png" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/teamSpace" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+              <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Bootstrap upgrade of legacy site census-->
+          <div class="single-img cards project-cards" >
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv5/room.png" style="height:150px;">
+              <a href="img/sv5/room.png" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/census" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>  
+          <!--Bootstrap upgrade of legacy site census-->
+          <div class="single-img cards project-cards">
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv5/buildings.png" style="height:150px; width: 260px;">
+              <a href="img/sv5/buildings.png" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/census" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Bootstrap upgrade of legacy site census-->
+          <div class="single-img cards project-cards">
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv5/complete.png" style="height:150px; width: 260px;">
+              <a href="img/sv5/complete.png" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/census" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Bootstrap upgrade of legacy site census-->
+          <div class="single-img cards project-cards">
+            <img alt="Bootstrap Upgrade exmaple" class="project-image img-thumbnail single-img" src="img/sv5/floor.png" style="height:150px; width: 260px;">
+              <a href="img/sv5/floor.png" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio/tree/master/webDevStuff/census" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Bootstrap development for RSC.</p>
+          </div>
+          <!--Portfolio enhancement 1-->
+          <div class="single-img cards project-cards">
+            <img alt="Portfolio Upgrade" class="project-image img-thumbnail single-img" src="img/portfolioUpgrade3.PNG" style="height:150px;">
+              <a href="img/portfolioUpgrade3.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+              <a href="https://github.com/BayAreaITGuy/portfolio" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">
+                    <i class="fa fa-git" aria-hidden="true"></i>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </a>
+            <p class="color-black">Enhancing my portfolio around 9/15/2020.</p>  
+          </div>
+          <!--Portfolio enhancement 2-->
+          <div class="single-img cards project-cards">
+            <img alt="Portfolio Upgrade" class="project-image img-thumbnail single-img" src="img/portfolioUpgrade4.PNG" style="height:150px;">
+            <a href="img/portfolioUpgrade4.PNG" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">View</span>
+              </p>
+            </a>
+            <a href="https://github.com/BayAreaITGuy/portfolio" target="_blank">
+              <p class="card-btn">
+                <span class="btn btn-success btn-sm zoom">
+                  <i class="fa fa-git" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </span>
+              </p>
+            </a>
+            <p class="color-black">Enhancing my portfolio around 9/20/2020.</p>
+          </div>
+        </div>
+      </section>
+    <br /><br /><br />
+    <!--End of web Development work --------------------------------------------------------------------------->
+    <!--Start of CAD | Other work ---------------------------------------------------------------------------->  
+    <section class="wrapper">
+      <h1 id="autocad">CAD | Revit | Other Gallery</h1>
+        <div class="img-area">
+          <!--Autocad 25k with cleanup-->
+          <div class="single-img cards project-cards">
+            <img alt="Polyline example 1" class="project-image img-thumbnail  single-img" src="img/plines.PNG" style="height:150px;">
+              <a href="img/plines.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">CAD drawing cleanup and polylining 25,000 sq ft.</p>
+          </div>
+          <!--Autocad 25k with cleanup-->
+          <div class="single-img cards project-cards">
+            <img alt="Polyline example 2" class="project-image img-thumbnail  single-img" src="img/plines2.PNG" style="height:150px;">
+              <a href="img/plines2.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">CAD drawing cleanup and polylining 25,000 sq ft.</p>
+          </div>
+          <!--Autocad 25k with cleanup-->
+          <div class="single-img cards project-cards">
+            <img alt="Polyline example 2" class="project-image img-thumbnail  single-img" src="img/plines3.PNG" style="height:150px;">
+              <a href="img/plines3.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">CAD drawing cleanup and polylining 25,000 sq ft.</p>
+          </div>
+          <!--Autocad 25k with category-->
+          <div class="single-img cards project-cards">
+            <img alt="cad 1" class="project-image img-thumbnail  single-img" src="img/cad/25k_with_category.PNG" style="height:150px;">
+              <a href="img/cad/25k_with_category.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">AutoCAD Room Type & Category assignments.</p>
+          </div>
+          <!--Autocad 25k with category-->
+          <div class="single-img cards project-cards">
+            <img alt="cad 2" class="project-image img-thumbnail  single-img" src="img/cad/25k_with_category2.PNG" style="height:150px;">
+              <a href="img/cad/25k_with_category2.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">AutoCAD Room Type & Category assignments.</p>
+          </div>
+          <!--Autocad 25k with category-->
+          <div class="single-img cards project-cards">
+            <img alt="cad 3" class="project-image img-thumbnail  single-img" src="img/cad/25k_with_category3.PNG" style="height:150px; width: 250px;">
+              <a href="img/cad/25k_with_category3.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">AutoCAD Room Type & Category assignments.</p>
+          </div>
+          <!--revit home model 1-->
+          <div class="single-img cards project-cards">
+            <img alt="Sample Revit model home" class="project-image img-thumbnail  single-img" src="img/cad/apt_lvl_01_3d.PNG" style="height:150px;  width: 260px;">
+              <a href="img/cad/apt_lvl_01_3d.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">Revit example home model.</p>
+          </div>
+          <!--revit home model 2-->
+          <div class="single-img cards project-cards">
+            <img alt="Sample Revit model home" class="project-image img-thumbnail  single-img" src="img/getting_started_01.PNG" style="height:150px;">
+              <a href="img/getting_started_01.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">Revit example home model.</p>
+          </div>
+          <div class="single-img cards project-cards">
+            <img alt="Excel Direct Connect Report" class="project-image img-thumbnail  single-img" src="img/exceldc.PNG" style="height:150px;">
+              <a href="img/exceldc.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p class="color-black">Excel Direct Connect Report created for an RSC client.</p>
+          </div>
+          <!--aquarium slide-->
+          <div class="single-img cards project-cards">
+            <img alt="Aquarium" class="project-image img-thumbnail  single-img" src="img/aq.PNG" style="height:150px;">
+              <a href="img/aq.PNG" target="_blank">
+                <p class="card-btn">
+                  <span class="btn btn-success btn-sm zoom">View</span>
+                </p>
+              </a>
+            <p style="color:black; word-wrap: break-word; margin-bottom: 2px;">Slide from the annual RSC Company Presentation.</p>
+          </div>
+        </div>       
+        <br /><br /><br /><br /><br /><br />           
+      </section>
+      <!-- end of cad/iwms/other section ---------------------------------------------------------------------------->
+      <!--Start of contact ---------------------------------------------------------------------------->
+      <section id="contact" class="contact-section wrapper">
+        <div>
+          <h2>Let's work together!</h2>
+        </div>
+        <div id="contact-buttons">
+          <a class="btn contactIcon" href="https://github.com/BayAreaITGuy/portfolio" target="_blank">
+            <i class="fa fa-github fa-3x" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="Github"></i>
+          </a>
+          <a class="btn contactIcon" href="https://www.freecodecamp.org/masterchief1021" target="_blank">
+            <i class="fa fa-free-code-camp fa-3x" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="freeCodeCamp profile"></i>
+          </a>
+          <a class="btn contactIcon" href="https://www.linkedin.com/in/connorreadnour/" target="_blank">    
+            <i class="fa fa-linkedin fa-3x" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="LinkedIn profile"></i>
+          </a>
+          <a class="btn contactIcon" href="mailto:connorreadnour@gmail.com">
+              <i class="fa fa-envelope-open-o fa-3x" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="Email"></i>
+          </a>
+          <a class="btn contactIcon" href="tel:630-639-6677">
+              <i class="fa fa-mobile fa-4x" aria-hidden="true" data-toggle="tooltip"  data-placement="bottom" title="Phone"></i>
+          </a>
+        </div>
+      </section>
+    <footer style="text-align:center; width: 100%;">
+      <p>
+        © Created by Connor Readnour, with lots of&nbsp;<i class="fa fa-coffee"></i>&nbsp;.
+      </p>
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script>
+    //tooltip text on hover - bootstrap
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  </body>
+</html>
