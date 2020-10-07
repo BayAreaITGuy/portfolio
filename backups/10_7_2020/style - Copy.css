@@ -178,14 +178,10 @@ text-align: center;
   flex-direction: row;
   align-items: center;
   /* justify-content: center; */
-  max-width: 800px;
+  max-width: 900px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-}
-.example-img-size {
-  width: 300px;
-  height: 300px;
 }
 .center {
   text-align: center;
