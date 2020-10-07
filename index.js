@@ -1,9 +1,8 @@
+//Code for the back to ttop button
 //Get the button
 var mybutton = document.getElementById("myBtn");
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -11,13 +10,14 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// typewriter https://codepen.io/hi-im-si/pen/DHoup
+//End //Code for the back to ttop button
+
+//Start typewriter code, taken from https://codepen.io/hi-im-si/pen/DHoup
 var TxtType = function(el, toRotate, period) {
 this.toRotate = toRotate;
 this.el = el;
@@ -74,10 +74,10 @@ for (var i=0; i<elements.length; i++) {
 // INJECT CSS
 var css = document.createElement("style");
 css.type = "text/css";
-css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";//text color
 document.body.appendChild(css);
 };
-//end of typewriter
+//End of typewriter
 
 // Scroll to specific values - from https://css-tricks.com/snippets/jquery/smooth-scrolling/
 // scrollTo is the same
@@ -98,4 +98,4 @@ window.scrollBy({
 document.querySelector('.hello').scrollIntoView({ 
     behavior: 'smooth' 
 });
-// end of scroll code
+// end of scroll specific values code
