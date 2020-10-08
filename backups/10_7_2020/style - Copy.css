@@ -183,6 +183,10 @@ text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
+/* .leftRightMargin {
+  margin-left: 1px;
+  margin-right: 1px;
+} */
 .center {
   text-align: center;
   align-items: center;
@@ -225,14 +229,6 @@ text-align: center;
 }
 .zoom:hover {
   transform: scale(1.25); /* (25% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-.zoomResume {
-  padding: 10px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-}
-.zoomResume:hover {
-  transform: scale(1.05); /* (25% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 /* end zoom code */
 /* back to top button  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
