@@ -7,7 +7,7 @@ scroll-behavior: smooth;
 }
 body {
   font-size: 1.8rem;
-  font-weight: 200;
+  /* font-weight: 200; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
   animation: fadeInAnimation ease 2s; 
@@ -71,7 +71,6 @@ li {
   color: #f8f8ff;
 }
 footer {
-  /* font-weight: 300; */
   display: flex;
   justify-content: space-evenly;
   padding: 1.75rem;
@@ -83,6 +82,14 @@ footer {
   width:100%; 
   height:auto;
   max-width: 250px;
+}
+#name {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 750;
+}
+.myProjects {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
 }
 .iAbout {
   color:white; 
