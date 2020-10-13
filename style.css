@@ -86,10 +86,12 @@ footer {
 #name {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 750;
+  letter-spacing: 1px;
 }
 .myProjects {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .iAbout {
   color:white; 
