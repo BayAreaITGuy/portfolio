@@ -33,6 +33,26 @@ body {
   background: rgb(33, 36, 35);
 }
 /* end scrollbar stuff */
+/*fa icons*/
+/* 
+.fa-contactIcon {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-contactIcon:hover {
+    opacity: 0.7;
+}
+.fa-file-text {
+  background: #3B5998;
+  color: white;
+} 
+*/
+/*end fa icons*/
 a:link {
   color: white;
   text-decoration: none;
@@ -151,14 +171,8 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
-.dropdown-content a:hover {
-  background-color: rgb(27, 27, 27);
-}
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: rgb(27, 27, 27); /*hover color when hovering over the dropdown */
 }
 .card-btn{
   color:black; 
@@ -254,14 +268,14 @@ text-align: center;
   z-index: 99;
   border: none;
   outline: none;
-  background-color:  rgb(19, 20, 20);;
+  /* background-color:  rgb(19, 20, 20);; */
   color: white;
   cursor: pointer;
   /* padding: 5px; */
   border-radius: 4px;
 }
 .myBtn:hover {
-  background-color: #555;
+  background-color: rgb(104, 189, 238);
 }
 .color-black{
   color: black;
