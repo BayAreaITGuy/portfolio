@@ -95,7 +95,7 @@ window.scrollBy({
 });
 
 // Scroll to a certain element
-document.querySelector('.hello').scrollIntoView({ 
-    behavior: 'smooth' 
-});
+// document.querySelector('.hello').scrollIntoView({ 
+//     behavior: 'smooth' 
+// });
 // end of scroll specific values code
