@@ -33,26 +33,6 @@ body {
   background: rgb(33, 36, 35);
 }
 /* end scrollbar stuff */
-/*fa icons*/
-/* 
-.fa-contactIcon {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-contactIcon:hover {
-    opacity: 0.7;
-}
-.fa-file-text {
-  background: #3B5998;
-  color: white;
-} 
-*/
-/*end fa icons*/
 a:link {
   color: white;
   text-decoration: none;
@@ -106,17 +86,21 @@ footer {
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-family: Helvetica, sans-serif; */
+  font-family: Consolas;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
+  font-size: 3em;
 }
 .myProjects {
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: Helvetica, sans-serif; */
+  font-family: Consolas;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
 }
 .iAbout {
   color:white; 
@@ -211,15 +195,11 @@ text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
-/* .leftRightMargin {
-  margin-left: 1px;
-  margin-right: 1px;
-} */
 .center {
   text-align: center;
   align-items: center;
 }
-.background-image {
+.backgroundColor {
   background:#000f10;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -308,15 +288,10 @@ text-align: center;
   background-size: 200%;
   background-position: 0%;
 }
-
 .button-2:hover {
   color: #FFF;
   background-position: 100%;
 }
-/* .card-img-size {
-  height:150px; 
-  width: 260px;
-} */
 /* body and @keyframes fade animation stuff https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
 @keyframes fadeInAnimation { 
   0% { 
