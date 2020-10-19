@@ -103,6 +103,21 @@ footer {
   font-weight: bold;
   letter-spacing: 6.5px;
 }
+/*contact fa buttons */
+.roundWhiteIcon {
+  padding: 20px;
+  font-size: 30px;
+  width: 2.5em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+}
+.iconHover:hover {
+  opacity: .7;
+}
 .iAbout {
   color:white; 
   margin-left: 5px;
