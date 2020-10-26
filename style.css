@@ -16,17 +16,16 @@ body {
 /* scrollbar stuff */
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 35px;
 }  
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent; 
-  border-radius: 10px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #013135;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
