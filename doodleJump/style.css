@@ -20,3 +20,6 @@
     background-image: url("platform.png");
     position: absolute; 
 }
+p {
+    text-align: center;
+}

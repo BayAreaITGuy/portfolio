@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isJumping = false
         clearInterval(upTimerId)
         downTimerId = setInterval(function () {
-            doodlerBottomSpace -= 5 //higher num = faster fall spped
+            doodlerBottomSpace -= 8//higher num = faster fall spped
             doodler.style.bottom = doodlerBottomSpace + 'px'
             if (doodlerBottomSpace <= 0) {
                 gameOver()
