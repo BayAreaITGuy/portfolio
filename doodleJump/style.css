@@ -1,0 +1,22 @@
+.grid {
+    width: 500px;
+    height: 750px;
+    background-image: url("background.png");
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doodler {
+    width: 87px;
+    height: 85px;
+    background-image: url("doodler-guy.png");
+    position: absolute;
+}
+.platform {
+    width: 170px;
+    height: 15px;
+    background-image: url("platform.png");
+    position: absolute; 
+}
