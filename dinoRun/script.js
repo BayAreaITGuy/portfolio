@@ -15,7 +15,7 @@ var checkDead = setInterval(function () {
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left")); //gets left position of the block to see if it's hitting character
     if (blockLeft < 20 && blockLeft > -20 && characterTop >= 130) { //if block is within the px of the character && character hasn't jumped over the block, you lose
         block.style.animation = "none";
-        alert("Game Over. score: " + Math.floor(counter / 100));
+        alert("Game Over. score: " + Math.floor(counter / 100) + ". Refresh the page to reset the red block speed :)");
         counter = 0;
         block.style.animation = "block 1s infinite linear";
     } else {
