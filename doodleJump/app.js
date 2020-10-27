@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid') //picking out the class of .grid
     const doodler = document.createElement('div') //creating div doodler
     let isGameOver = false
-    let speed = 3
-    let platformCount = 5
+    // let speed = 3
+    let platformCount = 4 //number of platforms allowed on screen
     let platforms = []
-    let score = 0
+    let score = 0 //starting score
     let doodlerLeftSpace = 50
     let startPoint = 150
     let doodlerBottomSpace = startPoint
-    const gravity = 0.9
+    // const gravity = .9
     let upTimerId
     let downTimerId
     let isJumping = true
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     class Platform {
         constructor(newPlatBottom) {
-            this.left = Math.random() * 300 //area where platforms can spawn within
+            this.left = Math.random() * 400 //area where platforms can spawn within
             this.bottom = newPlatBottom
             this.visual = document.createElement('div')
 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     (doodlerBottomSpace >= platform.bottom) &&
                     (doodlerBottomSpace <= (platform.bottom + 15)) &&
                     ((doodlerLeftSpace + 60) >= platform.left) &&
-                    (doodlerLeftSpace <= (platform.left + 170)) && //width of the platform
+                    (doodlerLeftSpace <= (platform.left + 85)) && //width of the platform
                     !isJumping
                 ) {
                     // console.log('tick')
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
 
-        }, 30) //invoking fall every 30 milli, controls how fast you fall. higher num = slower fall
+        }, 25) //"fall spped" - invoking fall every 30 milli, controls how fast you fall. higher num = slower fall
     }
     //jumping function
     function jump() {
