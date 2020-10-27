@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(205, 160, 238);
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid brown;
+    margin: auto;
+    background-color: rosybrown;
+}
+#ground{
+    width: 502px;
+    height: 30px;
+    background-color: brown;
+    position: absolute;
+    left: 225px;
+    top: 201px;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: green;
+    position:relative;
+    top: 150px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.animate{
+    animation: jump 1s linear; /*how long character is in the air*/
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 2s infinite linear; /*how fast block moves right to left */
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p, h2, h1, h3, h4, h5{
+    text-align: center;
+}
