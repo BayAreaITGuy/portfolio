@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const doodler = document.createElement('div') //creating div doodler
     let isGameOver = false
     // let speed = 3
-    let platformCount = 4 //number of platforms allowed on screen
+    let platformCount = 5 //number of platforms allowed on screen
     let platforms = []
     let score = 0 //starting score
     let doodlerLeftSpace = 50
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('remove')
             grid.removeChild(grid.firstChild)
         }
-        grid.innerHTML = score + " platforms jumped, nice!"
+        grid.innerHTML = score + " platforms jumped, nice! Remember to press enter or refresh the page :)"
         clearInterval(upTimerId)
         clearInterval(downTimerId)
         clearInterval(leftTimerId)
