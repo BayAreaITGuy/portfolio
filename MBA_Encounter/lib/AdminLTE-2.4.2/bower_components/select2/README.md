@@ -1,57 +1,123 @@
-Introduction
-============
+Select2
+=======
+[![Build Status][travis-ci-image]][travis-ci-status]
 
-![Bower version](https://img.shields.io/bower/v/adminlte.svg)
-[![npm version](https://img.shields.io/npm/v/admin-lte.svg)](https://www.npmjs.com/package/admin-lte)
-[![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)
-[![CDNJS](https://img.shields.io/cdnjs/v/admin-lte.svg)](https://cdnjs.com/libraries/admin-lte)
+Select2 is a jQuery-based replacement for select boxes. It supports searching,
+remote data sets, and pagination of results.
 
-**AdminLTE** -- is a fully responsive admin template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself.
+To get started, checkout examples and documentation at
+https://select2.org/
 
-**Download & Preview on [AdminLTE.IO](https://adminlte.io)**
+Use cases
+---------
+* Enhancing native selects with search.
+* Enhancing native selects with a better multi-select interface.
+* Loading data from JavaScript: easily load items via AJAX and have them
+  searchable.
+* Nesting optgroups: native selects only support one level of nesting. Select2
+  does not have this restriction.
+* Tagging: ability to add new items on the fly.
+* Working with large, remote datasets: ability to partially load a dataset based
+  on the search term.
+* Paging of large datasets: easy support for loading more pages when the results
+  are scrolled to the end.
+* Templating: support for custom rendering of results and selections.
 
-### Looking for Premium Templates?
-**AdminLTE.IO just opened a new premium templates website. Hand picked to ensure the best quality and the most affordable prices. Visit https://themequarry.com for more information.**
+Browser compatibility
+---------------------
+* IE 8+
+* Chrome 8+
+* Firefox 10+
+* Safari 3+
+* Opera 10.6+
 
-## Documentation & Installation Guide
-Visit the [online documentation](https://adminlte.io/docs) for the most
-updated guide.
+Select2 is automatically tested on the following browsers.
 
-!["AdminLTE Presentation"](https://adminlte.io/AdminLTE2.png "AdminLTE Presentation")
+[![Sauce Labs Test Status][saucelabs-matrix]][saucelabs-status]
 
-### Contribution
-Contribution are always **welcome and recommended**! Here is how:
+Usage
+-----
+You can source Select2 directly from a CDN like [JSDliver][jsdelivr] or
+[CDNJS][cdnjs], [download it from this GitHub repo][releases], or use one of
+the integrations below.
 
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/AdminLTE.git```
-- Make your changes
-- Create a pull request
+Integrations
+------------
+Third party developers have created plugins for platforms which allow Select2 to be integrated more natively and quickly. For many platforms, additional plugins are not required because Select2 acts as a standard `<select>` box.
 
-#### Contribution Requirements:
+Plugins
 
-- When you contribute, you agree to give a non-exclusive license to AdminLTE.IO to use that contribution in any context as we (AdminLTE.IO) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an [open source](http://opensource.org/licenses) license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
+* [Django]
+  - [django-autocomplete-light]
+  - [django-easy-select2]
+  - [django-select2]
+* [Meteor] - [meteor-select2]
+* [Ruby on Rails][ruby-on-rails] - [select2-rails]
+* [Wicket] - [wicketstuff-select2]
+* [Yii 2][yii2] - [yii2-widget-select2]
 
-### License
-AdminLTE is an open source project by [AdminLTE.IO](https://adminlte.io) that is licensed under [MIT](http://opensource.org/licenses/MIT). AdminLTE.IO
-reserves the right to change the license of future releases. Wondering what you can or can't do? View the [license guide](https://adminlte.io/docs/license).
+Themes
 
-### Legacy Releases
-AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://adminlte.io/themes/AdminLTE/documentation/index.html#upgrade), but if you intend to keep using AdminLTE 1.x, you can download the latest release from the [releases](https://github.com/almasaeed2010/AdminLTE/releases) section above.
+- [Bootstrap 3][bootstrap3] - [select2-bootstrap-theme]
+- [Flat UI][flat-ui] - [select2-flat-theme]
+- [Metro UI][metro-ui] - [select2-metro]
 
-### Change log
-**For the most recent change log, visit the [releases page](https://github.com/almasaeed2010/AdminLTE/releases) or the [changelog file](https://github.com/almasaeed2010/AdminLTE/blob/master/changelog.md).** We will add detailed release notes to each new release. 
+Missing an integration? Modify this `README` and make a pull request back here to Select2 on GitHub.
 
-### Image Credits
-- [Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
-- [Graphicsfuel](http://www.graphicsfuel.com/2013/02/13-high-resolution-blur-backgrounds/)
-- [Pickaface](http://pickaface.net/)
-- [Unsplash](https://unsplash.com/)
-- [Uifaces](http://uifaces.com/)
+Internationalization (i18n)
+---------------------------
+Select2 supports multiple languages by simply including the right language JS
+file (`dist/js/i18n/it.js`, `dist/js/i18n/nl.js`, etc.) after
+`dist/js/select2.js`.
 
-### Donations
-Donations are **greatly appreciated!**
+Missing a language? Just copy `src/js/select2/i18n/en.js`, translate it, and
+make a pull request back to Select2 here on GitHub.
 
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "AdminLTE Presentation")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=629XCUSXBHCBC "Donate")
+Documentation
+-------------
+The documentation for Select2 is available
+[through GitHub Pages][documentation] and is located within this repository
+in the [`docs` folder][documentation-folder].
+
+Community
+---------
+You can find out about the different ways to get in touch with the Select2
+community at the [Select2 community page][community].
+
+Copyright and license
+---------------------
+The license is available within the repository in the [LICENSE][license] file.
+
+[cdnjs]: http://www.cdnjs.com/libraries/select2
+[community]: https://select2.org/getting-help
+[documentation]: https://select2.org
+[documentation-folder]: https://github.com/select2/select2/tree/master/docs
+[freenode]: https://freenode.net/
+[jsdelivr]: http://www.jsdelivr.com/#!select2
+[license]: LICENSE.md
+[releases]: https://github.com/select2/select2/releases
+[saucelabs-matrix]: https://saucelabs.com/browser-matrix/select2.svg
+[saucelabs-status]: https://saucelabs.com/u/select2
+[travis-ci-image]: https://img.shields.io/travis/select2/select2/master.svg
+[travis-ci-status]: https://travis-ci.org/select2/select2
+
+[bootstrap3]: https://getbootstrap.com/
+[django]: https://www.djangoproject.com/
+[django-autocomplete-light]: https://github.com/yourlabs/django-autocomplete-light
+[django-easy-select2]: https://github.com/asyncee/django-easy-select2
+[django-select2]: https://github.com/applegrew/django-select2
+[flat-ui]: http://designmodo.github.io/Flat-UI/
+[meteor]: https://www.meteor.com/
+[meteor-select2]: https://github.com/nate-strauser/meteor-select2
+[metro-ui]: http://metroui.org.ua/
+[select2-metro]: http://metroui.org.ua/select2.html
+[ruby-on-rails]: http://rubyonrails.org/
+[select2-bootstrap-theme]: https://github.com/select2/select2-bootstrap-theme
+[select2-flat-theme]: https://github.com/techhysahil/select2-Flat_Theme
+[select2-rails]: https://github.com/argerim/select2-rails
+[vue.js]: http://vuejs.org/
+[select2-vue]: http://vuejs.org/examples/select2.html
+[wicket]: https://wicket.apache.org/
+[wicketstuff-select2]: https://github.com/wicketstuff/core/tree/master/select2-parent
+[yii2]: http://www.yiiframework.com/
+[yii2-widget-select2]: https://github.com/kartik-v/yii2-widget-select2
