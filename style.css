@@ -283,7 +283,8 @@ text-align: center;
   color:#f8f8ff; 
   margin-left: 30px; 
   margin-right: 30px;
-  font-family: 'Philosopher', sans-serif;
+  /* font-family: 'Philosopher', sans-serif; */
+  font-family: Georgia, 'Nimbus Roman No9 L', 'Century Schoolbook L', serif;
   font-weight: 300;
 }
 .typewrite {
