@@ -214,6 +214,7 @@ footer {
   text-align: center;
   align-items: center;
 }
+/*background color for entire page*/
 .backgroundColor {
   background: #000f10;
   -webkit-background-size: cover;
