@@ -293,6 +293,9 @@ footer {
 .border-aqua {
   border-color: #2596be;
 }
+.border-cert {
+  border-color: #4caf50;
+}
 .border-rsc {
   border-color: #075294;
 }
